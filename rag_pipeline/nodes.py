@@ -236,7 +236,35 @@ def node_query_decomposition(state: GraphState) -> GraphState:
             "subquestion_results": [],
             "context": [],
             "combined_context": "",
-            "explanation": f"Error in decomposition: {str(e)}",        }
+            "explanation": f"Error in decomposition: {str(e)}",
+        }
+
+
+# def node_complex_llm_answer(state: GraphState) -> GraphState:
+#     """복잡한 질문에 대한 최종 답변을 생성합니다."""
+#     try:
+#         query: str = state["question"][-1]
+#         subquestion_results = state.get("subquestion_results", [])
+
+#         if not subquestion_results:
+#             return {
+#                 "answer": f"No sub-question results available for: {query}",
+#                 "messages": [("assistant", "No sub-question results")],
+#             }
+
+#         # 모든 하위 질문의 결과를 종합하여 최종 답변 생성
+#         final_answer = query_decomposition.aggregate_subquestion_results(
+#             original_query=query, subquestion_results=subquestion_results
+#         )
+
+#         return {"answer": final_answer, "messages": [("assistant", final_answer)]}
+
+#     except Exception as e:
+#         print(f"Error in complex LLM answer generation: {e}")
+#         return {
+#             "answer": f"Error generating complex answer: {str(e)}",
+#             "messages": [("assistant", f"Error: {str(e)}")],
+#         }
 
 
 def node_relevance_check_parent(state: GraphState) -> GraphState:
