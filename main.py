@@ -27,12 +27,14 @@ def run(
     query: str,
     pdf_path: str | None = None,
     img_path: str | None = None,
-):
+):    # Convert single hybrid weight to list format [embedding_weight, bm25_weight]
+    hybrid_weights = [config.HYBRID_WEIGHT, 1 - config.HYBRID_WEIGHT]
+    
     graph = build_graph(
         Path(pdf_path) if pdf_path else None,
         Path(img_path) if img_path else None,
         config.RETRIEVAL_TYPE,
-        config.HYBRID_WEIGHT,
+        hybrid_weights,
     )
     init_state: GraphState = {"question": [query], "messages": [("user", query)]}
     final_state = graph.invoke(init_state)

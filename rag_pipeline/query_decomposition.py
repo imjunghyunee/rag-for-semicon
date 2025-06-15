@@ -1,5 +1,7 @@
 from __future__ import annotations
 from typing import List, Dict, Any, Optional
+import requests
+import json
 from rag_pipeline import utils, retrievers, config
 from langchain.schema import Document
 
@@ -15,10 +17,11 @@ def decompose_query(original_query: str, max_subquestions: int = 5) -> List[str]
     Returns:
         하위 질문들의 리스트
     """
+
     try:
-        response = utils.client.chat.completions.create(
-            model=config.OPENAI_MODEL,
-            messages=[
+        payload = {
+            "model": config.REMOTE_LLM_MODEL,
+            "messages": [
                 {
                     "role": "system",
                     "content": f"""You are an expert in semiconductor physics who excels at breaking down complex questions into simpler, manageable sub-questions.
@@ -48,15 +51,17 @@ def decompose_query(original_query: str, max_subquestions: int = 5) -> List[str]
                     "content": f"Let's break down this complex semiconductor physics question: {original_query}",
                 },
             ],
-            max_tokens=5000,
-            temperature=0.3,
-        )
-
-        response_text = response.choices[0].message.content.strip()
+            "max_tokens": 1000,
+            "temperature": 0.3,
+            "top_p": 0.95,
+            "stream": False,
+            "n": 1,        }
+        response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+        subquestions_text = response["choices"][0]["message"]["content"].strip()
 
         # Parse numbered list into individual questions
         subquestions = []
-        lines = response_text.split("\n")
+        lines = subquestions_text.split("\n")
 
         for line in lines:
             line = line.strip()
@@ -257,42 +262,42 @@ def aggregate_subquestion_results(
     combined_retrieved_context = "\n\n".join(all_retrieved_contexts)
 
     try:
-        final_answer = (
-            utils.client.chat.completions.create(
-                model=config.OPENAI_MODEL,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": """You are an expert in semiconductor physics who excels at synthesizing complex information to provide comprehensive answers.
+        payload = {
+            "model": config.REMOTE_LLM_MODEL,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": """You are an expert in semiconductor physics who excels at synthesizing complex information to provide comprehensive answers.
 
-                                    Based on sub-question answers and context, provide a comprehensive, well-structured final answer that:
-                                    1. Synthesizes information from all sub-questions
-                                    2. Addresses the original question directly and completely
-                                    3. Is technically accurate for semiconductor physics domain
-                                    4. Includes relevant details and explanations
-                                    5. Shows how the sub-answers connect to form the complete solution
+                                Based on sub-question answers and context, provide a comprehensive, well-structured final answer that:
+                                1. Synthesizes information from all sub-questions
+                                2. Addresses the original question directly and completely
+                                3. Is technically accurate for semiconductor physics domain
+                                4. Includes relevant details and explanations
+                                5. Shows how the sub-answers connect to form the complete solution
 
-                                    Structure your response clearly with proper reasoning and conclusions.""",
-                    },
-                    {
-                        "role": "user",
-                        "content": f"""Original Complex Question: {original_query}
+                                Structure your response clearly with proper reasoning and conclusions.""",
+                },
+                {
+                    "role": "user",
+                    "content": f"""Original Complex Question: {original_query}
 
-                                    Sequential sub-questions and their answers:
-                                    {combined_answers}
+                                Sequential sub-questions and their answers:
+                                {combined_answers}
 
-                                    Retrieved context from all searches:
-                                    {combined_retrieved_context}
+                                Retrieved context from all searches:
+                                {combined_retrieved_context}
 
-                                    Please provide a comprehensive final answer to the original question.""",
-                    },
-                ],
-                max_tokens=2000,
-                temperature=0.2,
-            )
-            .choices[0]
-            .message.content.strip()
-        )
+                                Please provide a comprehensive final answer to the original question.""",
+                },
+            ],
+            "max_tokens": 2000,
+            "temperature": 0.2,
+            "stream": False,
+            "n": 1,
+        }
+        response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+        final_answer = response["choices"][0]["message"]["content"].strip()
 
         return final_answer
 
@@ -511,9 +516,9 @@ def process_complex_query_with_expansion(
         print("🔧 Step 2: Decomposing query with context awareness...")
 
         try:
-            response = utils.client.chat.completions.create(
-                model=config.OPENAI_MODEL,
-                messages=[
+            payload = {
+                "model": config.REMOTE_LLM_MODEL,
+                "messages": [
                     {
                         "role": "system",
                         "content": f"""You are an expert in semiconductor physics who excels at breaking down complex questions into simpler, manageable sub-questions.
@@ -546,11 +551,13 @@ Available Context:
 Break down this question into focused sub-questions that can effectively leverage the available context.""",
                     },
                 ],
-                max_tokens=1000,
-                temperature=0.3,
-            )
-
-            response_text = response.choices[0].message.content.strip()
+                "max_tokens": 1000,
+                "temperature": 0.3,
+                "stream": False,
+                "n": 1,
+            }
+            response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+            response_text = response["choices"][0]["message"]["content"].strip()
             subquestions = []
             lines = response_text.split("\n")
 

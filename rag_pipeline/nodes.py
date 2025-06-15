@@ -1,5 +1,6 @@
 from __future__ import annotations
 import json
+import requests
 from typing import List
 from rag_pipeline.graph_state import GraphState
 from rag_pipeline import retrievers, config, utils, query_decomposition
@@ -235,35 +236,7 @@ def node_query_decomposition(state: GraphState) -> GraphState:
             "subquestion_results": [],
             "context": [],
             "combined_context": "",
-            "explanation": f"Error in decomposition: {str(e)}",
-        }
-
-
-def node_complex_llm_answer(state: GraphState) -> GraphState:
-    """복잡한 질문에 대한 최종 답변을 생성합니다."""
-    try:
-        query: str = state["question"][-1]
-        subquestion_results = state.get("subquestion_results", [])
-
-        if not subquestion_results:
-            return {
-                "answer": f"No sub-question results available for: {query}",
-                "messages": [("assistant", "No sub-question results")],
-            }
-
-        # 모든 하위 질문의 결과를 종합하여 최종 답변 생성
-        final_answer = query_decomposition.aggregate_subquestion_results(
-            original_query=query, subquestion_results=subquestion_results
-        )
-
-        return {"answer": final_answer, "messages": [("assistant", final_answer)]}
-
-    except Exception as e:
-        print(f"Error in complex LLM answer generation: {e}")
-        return {
-            "answer": f"Error generating complex answer: {str(e)}",
-            "messages": [("assistant", f"Error: {str(e)}")],
-        }
+            "explanation": f"Error in decomposition: {str(e)}",        }
 
 
 def node_relevance_check_parent(state: GraphState) -> GraphState:
@@ -547,11 +520,11 @@ def node_query_decomposition_with_expansion(state: GraphState) -> GraphState:
 
 
 def node_query_expansion_retrieve(state: GraphState) -> GraphState:
-    """Query expansion retrieval node for content and examples databases"""
+    """Query expansion retrieval node for content and examples databases using hybrid search"""
     query: str = state["question"][-1]
 
     try:
-        content_docs, examples_docs = retrievers.query_expansion_retrieve(query)
+        content_docs, examples_docs = retrievers.query_expansion_retrieve_hybrid(query)
 
         return {
             "content_docs": content_docs,
@@ -694,9 +667,9 @@ def node_complex_llm_answer(state: GraphState) -> GraphState:
 
         # Use specialized prompt for complex queries
         try:
-            response = utils.client.chat.completions.create(
-                model=config.OPENAI_MODEL,
-                messages=[
+            payload = {
+                "model": config.REMOTE_LLM_MODEL,
+                "messages": [
                     {
                         "role": "system",
                         "content": """You are an expert in semiconductor physics who excels at providing comprehensive answers to complex technical questions.
@@ -722,10 +695,13 @@ Structure your response clearly with proper technical language.""",
                         "content": f"Original Question: {query}\n\nContext:\n{full_context}",
                     },
                 ],
-                max_tokens=2000,
-                temperature=0.3,
-            )
-            answer = response.choices[0].message.content
+                "max_tokens": 2000,
+                "temperature": 0.3,
+                "stream": False,
+                "n": 1,
+            }
+            response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+            answer = response["choices"][0]["message"]["content"].strip()
         except Exception as e:
             print(f"Error in complex answer generation: {e}")
             answer = utils.generate_llm_answer(query, full_context)

@@ -28,16 +28,9 @@ RERANKER_NAME: str = "BAAI/bge-reranker-v2-m3"
 CONTENT_DB_PATH: Path = Path("./vectordb/faiss")
 SUMMARY_DB_PATH: Path = Path("./vectordb/summary_faiss")
 
-# ----- OpenAI API 설정 -----
-OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise ValueError(
-        "OPENAI_API_KEY not found in environment variables. "
-        "Please create a .env file with your OpenAI API key. "
-        "See .env.example for reference."
-    )
-
-OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+# ----- Local LLM API 설정 -----
+REMOTE_LLM_URL: str = os.getenv("REMOTE_LLM_URL", "http://localhost:8000/v1/chat/completions")
+REMOTE_LLM_MODEL: str = os.getenv("REMOTE_LLM_MODEL", "agent:llama-4-scout-17B-16E-instruct")
 
 # ----- 검색 파라미터 -----
 TOP_K: int = int(os.getenv("TOP_K", 3))
@@ -60,7 +53,7 @@ SAVE_PATH: str = str(OUTPUT_PATH / "similarity_score.json")
 
 # 설정 검증
 print(f"Configuration loaded:")
-print(f"  - Model: {OPENAI_MODEL}")
+print(f"  - Model: {REMOTE_LLM_MODEL}")
 print(f"  - TOP_K: {TOP_K}")
 print(f"  - SIM_THRESHOLD: {SIM_THRESHOLD}")
 print(f"  - RERANK: {RERANK}")

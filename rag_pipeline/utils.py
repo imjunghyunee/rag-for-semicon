@@ -5,13 +5,11 @@ from rag_pipeline import config
 import os
 import base64
 import cv2
+import json
+import requests
 from pathlib import Path
 from pdf2image import convert_from_path
-from openai import OpenAI
 from rag_pipeline.text_splitter import MarkdownHeaderTextSplitter
-
-# Initialize OpenAI client
-client = OpenAI(api_key=config.OPENAI_API_KEY)
 
 
 def encode_image(image_path, image_size=(837, 1012)):
@@ -51,9 +49,7 @@ def pdf_to_docs(file_path: Path) -> List[Document]:
         output_path = temp_img_dir / f"page_{idx+1}.png"
         image.save(output_path, "PNG")
 
-    print(f"PDF successfully converted: {pdf_name} -> {len(images)} pages")
-
-    # Text Extraction
+    print(f"PDF successfully converted: {pdf_name} -> {len(images)} pages")    # Text Extraction
     all_texts = []
 
     for filename in sorted(os.listdir(temp_img_dir), key=get_page_number):
@@ -67,25 +63,17 @@ def pdf_to_docs(file_path: Path) -> List[Document]:
         image_ext = image_ext.lstrip(".")  # e.g. png, jpg
         image_url = f"data:image/{image_ext};base64,{image_url}"
 
-        response = client.chat.completions.create(
-            model=config.OPENAI_MODEL,
-            messages=[
+        payload = {
+            "model": config.REMOTE_LLM_MODEL,
+            "messages": [
                 {
                     "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": "Extract all the text from the image:",
-                        },
-                        {
-                            "type": "image_url",
-                            "image_url": {"url": image_url},
-                        },
-                    ],
+                    "content": f"Extract all the text from the image: {image_url}.",
                 }
             ],
-        )
-        text = response.choices[0].message.content
+        }
+        response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+        text = response["choices"][0]["message"]["content"].strip()
 
         print(f"Successfully extracted text from: {filename}\n")
         all_texts.append(f"{text.strip()}\n")
@@ -119,25 +107,17 @@ def img_to_docs(file_path: Path) -> List[Document]:
         image_ext = image_ext.lstrip(".")  # e.g. png, jpg
         image_url = f"data:image/{image_ext};base64,{image_url}"
 
-        response = client.chat.completions.create(
-            model=config.OPENAI_MODEL,
-            messages=[
+        payload = {
+            "model": config.REMOTE_LLM_MODEL,
+            "messages": [
                 {
                     "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": "Extract all the text from the image:",
-                        },
-                        {
-                            "type": "image_url",
-                            "image_url": {"url": image_url},
-                        },
-                    ],
+                    "content": f"Extract all the text from the image: {image_url}.",
                 }
             ],
-        )
-        text = response.choices[0].message.content
+        }
+        response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+        text = response["choices"][0]["message"]["content"].strip()
 
         print(f"Successfully extracted text from: {filename}\n")
         all_texts.append(f"{text.strip()}\n")
@@ -157,10 +137,10 @@ def img_to_docs(file_path: Path) -> List[Document]:
 
 
 def generate_summary(query_text: str) -> str:
-    """Generate summary for the given query using OpenAI API."""
-    response = client.chat.completions.create(
-        model=config.OPENAI_MODEL,
-        messages=[
+    """Generate summary for the given query using local LLM API."""
+    payload = {
+        "model": config.REMOTE_LLM_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": "You are a helpful assistant that generates summaries based on the provided question.",
@@ -170,18 +150,21 @@ def generate_summary(query_text: str) -> str:
                 "content": f"[Question]:{query_text}",
             },
         ],
-        max_tokens=5000,
-        temperature=0.5,
-        top_p=0.95,
-    )
-    return response.choices[0].message.content
+        "max_tokens": 5000,
+        "temperature": 0.5,
+        "top_p": 0.95,
+        "stream": False,
+        "n": 1,
+    }
+    response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+    return response["choices"][0]["message"]["content"].strip()
 
 
 def generate_hyde_document(query_text: str) -> str:
-    """Generate hypothetical document for HyDE using OpenAI API."""
-    response = client.chat.completions.create(
-        model=config.OPENAI_MODEL,
-        messages=[
+    """Generate hypothetical document for HyDE using local LLM API."""
+    payload = {
+        "model": config.REMOTE_LLM_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": "You are a helpful assistant that generates answers based on the provided question and context.",
@@ -191,18 +174,21 @@ def generate_hyde_document(query_text: str) -> str:
                 "content": f"[Question]:{query_text}",
             },
         ],
-        max_tokens=5000,
-        temperature=0.5,
-        top_p=0.95,
-    )
-    return response.choices[0].message.content
+        "max_tokens": 5000,
+        "temperature": 0.5,
+        "top_p": 0.95,
+        "stream": False,
+        "n": 1,
+    }
+    response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+    return response["choices"][0]["message"]["content"].strip()
 
 
 def generate_llm_answer(query_text: str, context: str) -> str:
-    """Generate final answer using OpenAI API with improved context handling."""
-    response = client.chat.completions.create(
-        model=config.OPENAI_MODEL,
-        messages=[
+    """Generate final answer using local LLM API with improved context handling."""
+    payload = {
+        "model": config.REMOTE_LLM_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": """You are a helpful assistant specializing in semiconductor physics that generates accurate answers based on the provided question and context.
@@ -224,20 +210,23 @@ The context may include:
                 "content": f"Question: {query_text}\n\nContext:\n{context}",
             },
         ],
-        max_tokens=5000,
-        temperature=0.3,
-        top_p=0.95,
-    )
-    return response.choices[0].message.content
+        "max_tokens": 5000,
+        "temperature": 0.3,
+        "top_p": 0.95,
+        "stream": False,
+        "n": 1,
+    }
+    response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+    return response["choices"][0]["message"]["content"].strip()
 
 
 def check_query_complexity(query_text: str) -> str:
     """Determine if the question requires simple retrieval or complex multi-hop reasoning."""
 
     try:
-        response = client.chat.completions.create(
-            model=config.OPENAI_MODEL,
-            messages=[
+        payload = {
+            "model": config.REMOTE_LLM_MODEL,
+            "messages": [
                 {
                     "role": "system",
                     "content": """You are an expert in semiconductor physics who specializes in categorizing question complexity.
@@ -269,12 +258,14 @@ Respond with ONLY one word: "simple" or "complex" """,
                     "content": f"Categorize this semiconductor physics question: {query_text}",
                 },
             ],
-            max_tokens=10,
-            temperature=0.1,
-            top_p=0.95,
-        )
-
-        decision = response.choices[0].message.content.strip().lower()
+            "max_tokens": 10,
+            "temperature": 0.1,
+            "top_p": 0.95,
+            "stream": False,
+            "n": 1,
+        }
+        response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
+        decision = response["choices"][0]["message"]["content"].strip().lower()
 
         # 추가 검증 로직
         if decision not in ["simple", "complex"]:
@@ -329,9 +320,9 @@ Respond with ONLY one word: "simple" or "complex" """,
 
 def extract_variables(query_text: str) -> str:
     """Extract meaningful variables and their values from the user query."""
-    response = client.chat.completions.create(
-        model=config.OPENAI_MODEL,
-        messages=[
+    payload = {
+        "model": config.REMOTE_LLM_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": """You are an expert in semiconductor physics who specializes in extracting variables and their values from technical questions.
@@ -355,12 +346,15 @@ Respond ONLY with the dictionary format as a string.""",
                 "content": f"Extract variables from this semiconductor physics question: {query_text}",
             },
         ],
-        max_tokens=500,
-        temperature=0.2,
-    )
+        "max_tokens": 500,
+        "temperature": 0.2,
+        "stream": False,
+        "n": 1,
+    }
+    response = requests.post(config.REMOTE_LLM_URL, json=payload).json()
 
     try:
-        variables_str = response.choices[0].message.content.strip()
+        variables_str = response["choices"][0]["message"]["content"].strip()
         # Validate that it's a reasonable dictionary-like string
         if variables_str.startswith("{") and variables_str.endswith("}"):
             return variables_str
