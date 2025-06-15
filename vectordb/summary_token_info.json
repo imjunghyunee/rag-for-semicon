@@ -1,0 +1,1710 @@
+[
+  {
+    "index": 0,
+    "example_id": "Example 1.1",
+    "token_count": 124,
+    "text_length": 545,
+    "summary_text": "Calculate the volume density of atoms in a body-centered cubic crystal. The key concept is understanding how atomic positions within a unit cell contribute to the total atom count per cell. Specifically, the corner atoms are shared among adjacent cells, while the body-centered atom is fully contained within one unit cell. This structural knowledge is essential to compute how many atoms are effectively present in a single unit cell. By combining this with the unit cell’s physical volume, the atomic density of the material can be determined.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 0,
+      "parent_id": "Example 1.1",
+      "example_id": "Example 1.1",
+      "original_length": 940
+    }
+  },
+  {
+    "index": 1,
+    "example_id": "Example 1.2",
+    "token_count": 111,
+    "text_length": 518,
+    "summary_text": "Calculate the Miller indices of a specific crystal plane. The key concept is the method of determining Miller indices by analyzing the intercepts of a plane with respect to the crystallographic axes. This process involves taking reciprocals of the intercepts and scaling to the smallest set of integers. Understanding Miller indices is essential for identifying and referencing specific lattice planes in a crystal structure. The exercise also emphasizes the equivalence of parallel planes that share the same indices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 1,
+      "parent_id": "Example 1.2",
+      "example_id": "Example 1.2",
+      "original_length": 893
+    }
+  },
+  {
+    "index": 2,
+    "example_id": "Example 1.3",
+    "token_count": 122,
+    "text_length": 562,
+    "summary_text": "Calculate the surface density of atoms on a specific crystallographic plane. The key concept is understanding how atoms are distributed across a lattice plane in a body-centered cubic (BCC) crystal structure. This involves determining how much of each atom is effectively part of the plane based on geometric sharing with adjacent planes. The (110) plane cuts through both corner and center atoms, and these contributions must be accounted for to compute surface atom density. The problem highlights how surface atom distribution varies with crystal orientation.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 2,
+      "parent_id": "Example 1.3",
+      "example_id": "Example 1.3",
+      "original_length": 1615
+    }
+  },
+  {
+    "index": 3,
+    "example_id": "Example 2.1",
+    "token_count": 134,
+    "text_length": 565,
+    "summary_text": "Calculate the photon energy from a given wavelength of x-ray radiation. The key concept is the fundamental inverse relationship between a photon's energy and its wavelength, as described by quantum theory. The problem applies Planck’s equation to convert a wavelength into energy using physical constants. It reinforces the idea that shorter wavelengths, such as those of x-rays, are associated with higher photon energies. Understanding this relationship is critical for analyzing interactions between electromagnetic radiation and matter in semiconductor devices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 3,
+      "parent_id": "Example 2.1",
+      "example_id": "Example 2.1",
+      "original_length": 666
+    }
+  },
+  {
+    "index": 4,
+    "example_id": "Example 2.2",
+    "token_count": 140,
+    "text_length": 596,
+    "summary_text": "Calculate the de Broglie wavelength of a moving electron. The key concept is the wave-particle duality of matter, which states that particles such as electrons exhibit wave-like properties characterized by a wavelength. The de Broglie relation connects a particle's momentum to its wavelength, highlighting the quantum mechanical nature of microscopic particles. This example illustrates how even common particles like electrons can have measurable wavelengths at typical velocities. Understanding this principle is essential for analyzing quantum behavior in semiconductor materials and devices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 4,
+      "parent_id": "Example 2.2",
+      "example_id": "Example 2.2",
+      "original_length": 583
+    }
+  },
+  {
+    "index": 5,
+    "example_id": "Example 2.3",
+    "token_count": 145,
+    "text_length": 641,
+    "summary_text": "Calculate the first three quantized energy levels of an electron confined in an infinite potential well. The key concept is the quantization of energy for a particle restricted to a finite spatial region, resulting in discrete energy levels determined by quantum number \\( n \\). This model illustrates the foundational principle of quantum confinement, where the allowed energies are inversely related to the square of the well’s width. Such understanding is crucial for analyzing quantum wells and nanostructures in semiconductor devices. The example also shows how fundamental constants are used to compute energy values in electron-volts.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 5,
+      "parent_id": "Example 2.3",
+      "example_id": "Example 2.3",
+      "original_length": 669
+    }
+  },
+  {
+    "index": 6,
+    "example_id": "Example 2.4",
+    "token_count": 132,
+    "text_length": 613,
+    "summary_text": "Calculate the penetration depth of an electron encountering a potential energy barrier. The key concept is quantum mechanical tunneling, where a particle has a finite probability of existing within a classically forbidden region. This is modeled by an exponentially decaying wave function beyond the barrier. The exercise demonstrates how the penetration depth is determined by the particle’s energy and the barrier height, illustrating a foundational principle in quantum transport phenomena. Such understanding is critical for analyzing electron behavior in nanoscale semiconductor devices and tunnel junctions.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 6,
+      "parent_id": "Example 2.4",
+      "example_id": "Example 2.4",
+      "original_length": 1542
+    }
+  },
+  {
+    "index": 7,
+    "example_id": "Example 2.5",
+    "token_count": 125,
+    "text_length": 606,
+    "summary_text": "Calculate the probability of an electron tunneling through a potential barrier higher than its energy. The key concept is quantum tunneling, where particles can penetrate energy barriers due to the probabilistic nature of quantum mechanics. This example applies the exponential decay model to determine the likelihood of barrier penetration based on energy difference, barrier width, and physical constants. It demonstrates how even classically forbidden events can occur with measurable probabilities. The result underscores the importance of tunneling in nanoelectronic devices and quantum-scale systems.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 7,
+      "parent_id": "Example 2.5",
+      "example_id": "Example 2.5",
+      "original_length": 844
+    }
+  },
+  {
+    "index": 8,
+    "example_id": "Example 2.6",
+    "token_count": 144,
+    "text_length": 601,
+    "summary_text": "Calculate the first three quantized energy levels of an electron in a hydrogen-like atom. The key concept is the quantum mechanical model of atomic energy levels, where electrons occupy discrete states based on the principal quantum number \\(n\\). These levels are derived from solving the Schrödinger equation for the Coulombic potential of a one-electron atom. The negative sign of the energy indicates the bound nature of the electron, and increasing \\(n\\) corresponds to weaker binding. This principle is foundational to understanding atomic structure and spectral lines in semiconductor materials.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 8,
+      "parent_id": "Example 2.6",
+      "example_id": "Example 2.6",
+      "original_length": 685
+    }
+  },
+  {
+    "index": 9,
+    "example_id": "Example 3.1",
+    "token_count": 131,
+    "text_length": 648,
+    "summary_text": "Calculate the change in kinetic energy of an electron due to a small velocity increase. The key concept is understanding how even an extremely small change in velocity can lead to a measurable change in kinetic energy at the quantum scale. This example illustrates the use of a linear approximation for small perturbations in classical mechanics and applies it to compare energy changes with those typical in electronic band structures. It highlights how energy differences between allowed quantum states are small enough to justify treating them as nearly continuous. This insight is crucial for understanding energy band models in semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 9,
+      "parent_id": "Example 3.1",
+      "example_id": "Example 3.1",
+      "original_length": 1384
+    }
+  },
+  {
+    "index": 10,
+    "example_id": "Example 3.2",
+    "token_count": 145,
+    "text_length": 665,
+    "summary_text": "Calculate the width of a forbidden energy band at a specific wave vector in a periodic potential. The key concept is the formation of energy bandgaps in a crystal due to Bragg reflection and the periodicity of the lattice potential, described by Bloch’s theorem. This problem applies a mathematical model using trigonometric and quantum mechanical relations to determine the energy difference between allowed bands. It illustrates how bandgaps arise at the Brillouin zone boundaries and how their magnitude depends on potential parameters and lattice spacing. This analysis is central to understanding the electronic band structure of semiconductors and insulators.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 10,
+      "parent_id": "Example 3.2",
+      "example_id": "Example 3.2",
+      "original_length": 1890
+    }
+  },
+  {
+    "index": 11,
+    "example_id": "Example 3.3",
+    "token_count": 137,
+    "text_length": 645,
+    "summary_text": "Calculate the density of quantum states per unit volume for free electrons within a specific energy range. The key concept is the density of states function, which quantifies how many electron energy states are available within a given energy interval in a material. This example uses an integral form of the density of states to evaluate how many states exist from 0 to 1 eV for a free electron model. The result emphasizes that even at relatively low energies, a very large number of quantum states can be available. Understanding this distribution is essential for predicting carrier concentrations and transport properties in semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 11,
+      "parent_id": "Example 3.3",
+      "example_id": "Example 3.3",
+      "original_length": 1047
+    }
+  },
+  {
+    "index": 12,
+    "example_id": "Example 3.4",
+    "token_count": 152,
+    "text_length": 687,
+    "summary_text": "Determine the number of quantum states available in silicon within a narrow energy range near the conduction band edge at room temperature. The key concept is evaluating the density of states in a semiconductor using effective mass and thermal energy to estimate how many electron states are accessible in the conduction band within an energy window of \\( kT \\). This calculation provides a quantitative sense of the state availability that contributes to carrier population at thermal equilibrium. It demonstrates how the material's effective mass and temperature influence state density. Such understanding is vital for modeling electron behavior in intrinsic and doped semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 12,
+      "parent_id": "Example 3.4",
+      "example_id": "Example 3.4",
+      "original_length": 752
+    }
+  },
+  {
+    "index": 13,
+    "example_id": "Example 3.5",
+    "token_count": 144,
+    "text_length": 665,
+    "summary_text": "Determine the number of microstates for distributing indistinguishable particles among quantum states. The key concept is the application of combinatorics to quantum statistical mechanics, specifically using the binomial coefficient to count arrangements. This exercise contrasts two scenarios: a completely filled state space and one with a single vacancy, illustrating how the number of available configurations changes based on particle-to-state ratio. It provides insight into the statistical foundations underlying quantum occupancy and entropy. This principle is essential in understanding Fermi-Dirac and Bose-Einstein distributions in semiconductor physics.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 13,
+      "parent_id": "Example 3.5",
+      "example_id": "Example 3.5",
+      "original_length": 899
+    }
+  },
+  {
+    "index": 14,
+    "example_id": "Example 3.6",
+    "token_count": 136,
+    "text_length": 618,
+    "summary_text": "Calculate the probability that an energy state located 3\\(kT\\) above the Fermi level is occupied by an electron. The key concept is the Fermi-Dirac distribution, which describes the likelihood of electron occupancy in an energy state at a given temperature. This example highlights how occupancy probability decreases exponentially for energies above the Fermi energy, especially under non-degenerate conditions. It illustrates how thermal excitation influences electron distribution in semiconductors. Understanding this behavior is critical for analyzing carrier concentrations and transport in electronic materials.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 14,
+      "parent_id": "Example 3.6",
+      "example_id": "Example 3.6",
+      "original_length": 682
+    }
+  },
+  {
+    "index": 15,
+    "example_id": "Example 3.7",
+    "token_count": 126,
+    "text_length": 592,
+    "summary_text": "Determine the temperature at which an energy state just below the Fermi level has a 1% chance of being unoccupied. The key concept is the inverse use of the Fermi-Dirac distribution to solve for temperature based on a given occupancy probability. This demonstrates how temperature affects the distribution of electrons among energy states, especially near the Fermi energy. The example quantifies thermal excitation effects and how they influence the occupation of states in semiconductors and metals. Such analysis is crucial for predicting carrier behavior under varying thermal conditions.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 15,
+      "parent_id": "Example 3.7",
+      "example_id": "Example 3.7",
+      "original_length": 809
+    }
+  },
+  {
+    "index": 16,
+    "example_id": "Example 3.8",
+    "token_count": 186,
+    "text_length": 725,
+    "summary_text": "Determine the energy offset from the Fermi level at which the Boltzmann approximation closely matches the Fermi–Dirac distribution. The key concept is identifying the regime where classical statistics (Boltzmann) become a valid approximation of quantum statistics (Fermi–Dirac). This example quantitatively defines the threshold at which the relative error between the two models is within 5%, demonstrating that the Boltzmann approximation is appropriate when \\(E - E_F \\approx 3kT\\) or more. This result is important for simplifying carrier concentration calculations in non-degenerate semiconductors. It also clarifies the practical meaning of the “much greater than \\(kT\\)” condition often cited in semiconductor physics.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 16,
+      "parent_id": "Example 3.8",
+      "example_id": "Example 3.8",
+      "original_length": 1023
+    }
+  },
+  {
+    "index": 17,
+    "example_id": "Example 4.1",
+    "token_count": 135,
+    "text_length": 685,
+    "summary_text": "Calculate the probability that a conduction band state slightly above the band edge is occupied, and compute the equilibrium electron concentration in silicon. The key concept is the application of the Fermi–Dirac distribution to determine occupation probability and the exponential relationship between carrier concentration and the energy difference between the Fermi level and conduction band edge. Despite low individual state occupancy probabilities, the large number of available states results in a meaningful carrier population. This example illustrates how intrinsic material parameters and energy band positioning govern equilibrium charge carrier behavior in semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 17,
+      "parent_id": "Example 4.1",
+      "example_id": "Example 4.1",
+      "original_length": 1197
+    }
+  },
+  {
+    "index": 18,
+    "example_id": "Example 4.2",
+    "token_count": 144,
+    "text_length": 687,
+    "summary_text": "Calculate the thermal-equilibrium hole concentration in silicon at an elevated temperature. The key concept is the use of the exponential relationship between the Fermi level and the valence band edge to determine hole concentration, combined with the temperature-dependent scaling of the effective density of states. This example shows how increasing temperature affects both the density of states and the thermal energy \\(kT\\), leading to changes in carrier concentrations. It illustrates a practical method for estimating hole populations under non-standard thermal conditions in semiconductors. Such calculations are crucial for modeling device performance across temperature ranges.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 18,
+      "parent_id": "Example 4.2",
+      "example_id": "Example 4.2",
+      "original_length": 907
+    }
+  },
+  {
+    "index": 19,
+    "example_id": "Example 4.3",
+    "token_count": 148,
+    "text_length": 663,
+    "summary_text": "Calculate the intrinsic carrier concentration in silicon at two different temperatures using the temperature-dependent behavior of effective density of states and the bandgap energy. The key concept is that intrinsic carrier concentration increases exponentially with temperature due to increased thermal energy overcoming the bandgap. This example demonstrates how both the prefactor (from \\(N_c\\) and \\(N_v\\)) and the exponential term contribute to drastic changes in carrier concentration. It highlights the sensitivity of semiconductor behavior to temperature variations. Such insights are essential for understanding device performance and thermal stability.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 19,
+      "parent_id": "Example 4.3",
+      "example_id": "Example 4.3",
+      "original_length": 1185
+    }
+  },
+  {
+    "index": 20,
+    "example_id": "Example 4.4",
+    "token_count": 140,
+    "text_length": 572,
+    "summary_text": "Calculate the position of the intrinsic Fermi level relative to the center of the bandgap in intrinsic silicon. The key concept is that differences in the effective masses of electrons and holes shift the intrinsic Fermi level slightly away from the midgap. This example uses a logarithmic relation involving the effective mass ratio to quantify the shift. Although the displacement is small, it reflects the asymmetry in the density of states between conduction and valence bands. This concept is useful for precise modeling in intrinsic and lightly doped semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 20,
+      "parent_id": "Example 4.4",
+      "example_id": "Example 4.4",
+      "original_length": 858
+    }
+  },
+  {
+    "index": 21,
+    "example_id": "Example 4.5",
+    "token_count": 135,
+    "text_length": 628,
+    "summary_text": "Calculate the equilibrium concentrations of electrons and holes in silicon based on the Fermi level position. The key concept is the exponential dependence of carrier concentrations on the energy difference between the Fermi level and the conduction or valence band edges. This relationship shows how shifting the Fermi level—due to doping—can significantly alter the majority and minority carrier populations. The example emphasizes the asymmetric response of electron and hole concentrations to Fermi level movement. Understanding this behavior is essential for analyzing doped semiconductors and designing electronic devices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 21,
+      "parent_id": "Example 4.5",
+      "example_id": "Example 4.5",
+      "original_length": 1109
+    }
+  },
+  {
+    "index": 22,
+    "example_id": "Example 4.6",
+    "token_count": 155,
+    "text_length": 667,
+    "summary_text": "Calculate the electron concentration in silicon using the Fermi–Dirac integral when the Fermi level is significantly above the conduction band edge. The key concept is that under degenerate conditions, where the Fermi level is close to or above the conduction band, the Boltzmann approximation becomes invalid. This example applies the exact Fermi–Dirac statistics using the \\( F_{1/2} \\) integral to account for quantum mechanical occupancy. It demonstrates how proper modeling of carrier concentrations requires using full statistics in heavily doped or high carrier density regimes. This distinction is essential for accurate analysis of degenerate semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 22,
+      "parent_id": "Example 4.6",
+      "example_id": "Example 4.6",
+      "original_length": 853
+    }
+  },
+  {
+    "index": 23,
+    "example_id": "Example 4.7",
+    "token_count": 137,
+    "text_length": 602,
+    "summary_text": "Determine the fraction of electrons that remain bound to donor atoms at room temperature in doped silicon. The key concept is the thermal ionization of shallow donors, where most donor electrons gain enough thermal energy to move into the conduction band. This example uses Fermi-Dirac statistics to show that at 300 K, nearly all donor electrons are ionized. It demonstrates how doping effectiveness depends on temperature and the ionization energy of the donor level. This principle is fundamental for understanding charge neutrality and free carrier generation in extrinsically doped semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 23,
+      "parent_id": "Example 4.7",
+      "example_id": "Example 4.7",
+      "original_length": 754
+    }
+  },
+  {
+    "index": 24,
+    "example_id": "Example 4.8",
+    "token_count": 142,
+    "text_length": 633,
+    "summary_text": "Determine the temperature at which a specific fraction of acceptor atoms are ionized in p-type silicon. The key concept is the thermal activation of acceptor levels and the statistical likelihood of hole donation to the valence band. This example applies the Boltzmann approximation and accounts for degeneracy to find the temperature at which 90% ionization occurs. It shows that even at relatively low temperatures, a high percentage of acceptors can be ionized due to shallow energy levels. This insight is important for evaluating doping effectiveness and carrier availability in temperature-sensitive semiconductor applications.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 24,
+      "parent_id": "Example 4.8",
+      "example_id": "Example 4.8",
+      "original_length": 1082
+    }
+  },
+  {
+    "index": 25,
+    "example_id": "Example 4.9",
+    "token_count": 168,
+    "text_length": 680,
+    "summary_text": "Determine the thermal-equilibrium concentrations of electrons and holes in doped silicon for two doping scenarios. The key concept is the use of charge neutrality and the mass-action law to calculate majority and minority carrier concentrations in extrinsic semiconductors. When the net doping level significantly exceeds the intrinsic carrier concentration, the majority carrier density closely matches the doping level, and the minority carrier density is determined via the intrinsic relation \\( n_i^2 = n_0 p_0 \\). This example illustrates how donor and acceptor levels define carrier populations and highlights the disparity in electron and hole densities in n-type material.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 25,
+      "parent_id": "Example 4.9",
+      "example_id": "Example 4.9",
+      "original_length": 1599
+    }
+  },
+  {
+    "index": 26,
+    "example_id": "Example 4.10",
+    "token_count": 148,
+    "text_length": 678,
+    "summary_text": "Calculate the equilibrium electron and hole concentrations in doped germanium using both the doping and intrinsic carrier concentrations. The key concept is that when the doping level is comparable to the intrinsic carrier concentration, both the extrinsic and intrinsic contributions must be considered in calculating the majority carrier density. This example demonstrates how intrinsic carriers influence the total carrier population even in doped semiconductors. It also illustrates the use of the mass-action law to determine minority carrier concentration. Understanding this balance is essential for accurately modeling low-doped or intrinsic-like semiconductor behavior.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 26,
+      "parent_id": "Example 4.10",
+      "example_id": "Example 4.10",
+      "original_length": 979
+    }
+  },
+  {
+    "index": 27,
+    "example_id": "Example 4.11",
+    "token_count": 141,
+    "text_length": 647,
+    "summary_text": "Calculate the equilibrium electron and hole concentrations in a compensated p-type silicon semiconductor. The key concept is the effect of both donor and acceptor doping on the net carrier concentrations. In a compensated semiconductor, the majority carrier type is determined by the dominant dopant, and the net doping level governs the carrier population. This example uses a quadratic expression to compute the majority hole concentration and applies the mass-action law to find the minority electron concentration. It highlights how compensation alters carrier distribution and must be considered in accurately modeling semiconductor behavior.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 27,
+      "parent_id": "Example 4.11",
+      "example_id": "Example 4.11",
+      "original_length": 1075
+    }
+  },
+  {
+    "index": 28,
+    "example_id": "Example 4.12",
+    "token_count": 125,
+    "text_length": 612,
+    "summary_text": "Determine the donor doping level required to achieve a specified Fermi level position in compensated silicon. The key concept is the exponential relationship between the Fermi energy and net doping concentration in non-degenerate semiconductors. This example applies a rearranged form of the Fermi level equation to solve for the required donor concentration, taking into account existing acceptor impurities. It shows how precise control of both donor and acceptor levels can be used to engineer electronic properties. Such calculations are essential in semiconductor device design and doping strategy planning.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 28,
+      "parent_id": "Example 4.12",
+      "example_id": "Example 4.12",
+      "original_length": 891
+    }
+  },
+  {
+    "index": 29,
+    "example_id": "Example 4.13",
+    "token_count": 155,
+    "text_length": 653,
+    "summary_text": "Determine the doping concentration limit for which the Boltzmann approximation remains valid in p-type silicon. The key concept is the breakdown of the classical approximation when the Fermi level approaches the intrinsic level too closely, specifically when \\( E_F - E_i \\leq 3kT \\). This example relates the position of the Fermi level to doping concentration using an exponential relation and defines the critical threshold beyond which full Fermi–Dirac statistics must be used. It highlights how doping levels influence the validity of simplified models. This boundary is crucial for choosing appropriate models in semiconductor analysis and design.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 29,
+      "parent_id": "Example 4.13",
+      "example_id": "Example 4.13",
+      "original_length": 1206
+    }
+  },
+  {
+    "index": 30,
+    "example_id": "Example 5.1",
+    "token_count": 140,
+    "text_length": 655,
+    "summary_text": "Calculate the drift current density in a p-type gallium arsenide semiconductor under a known electric field. The key concept is that drift current arises from the motion of charge carriers under an electric field and is primarily contributed by majority carriers in extrinsic materials. This example uses carrier mobility and doping concentration to compute current density, highlighting the dominance of majority carrier contribution. It demonstrates how even modest electric fields can produce substantial current in semiconductors due to high carrier mobilities. Understanding drift current is foundational for analyzing semiconductor device operation.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 30,
+      "parent_id": "Example 5.1",
+      "example_id": "Example 5.1",
+      "original_length": 1326
+    }
+  },
+  {
+    "index": 31,
+    "example_id": "Example 5.2",
+    "token_count": 130,
+    "text_length": 635,
+    "summary_text": "Determine how electron mobility in silicon varies with doping concentration and temperature using empirical data. The key concept is that electron mobility decreases with increasing doping levels due to enhanced ionized impurity scattering, and also decreases with rising temperature due to increased lattice vibrations. This example highlights the importance of accurately modeling mobility for reliable semiconductor device performance. Designers must consider these dependencies to optimize conductivity and switching characteristics. Accurate mobility data is essential for predicting current flow and carrier transport in devices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 31,
+      "parent_id": "Example 5.2",
+      "example_id": "Example 5.2",
+      "original_length": 1107
+    }
+  },
+  {
+    "index": 32,
+    "example_id": "Example 5.3",
+    "token_count": 178,
+    "text_length": 614,
+    "summary_text": "Determine the donor concentration and majority carrier mobility in compensated n-type silicon from its conductivity. The key concept is the conductivity relation \\( \\sigma = e \\mu_n (N_d - N_a) \\), which links electrical conductivity to carrier mobility and net carrier density. Given a fixed acceptor concentration and measured conductivity, iterative estimation with mobility-vs-doping curves (such as from Figure 5.3) allows deduction of both \\( N_d \\) and \\( \\mu_n \\). This illustrates that as doping increases, mobility decreases due to impurity scattering, and accurate modeling must reflect this dependency.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 32,
+      "parent_id": "Example 5.3",
+      "example_id": "Example 5.3",
+      "original_length": 1743
+    }
+  },
+  {
+    "index": 33,
+    "example_id": "Design Example 5.4",
+    "token_count": 197,
+    "text_length": 689,
+    "summary_text": "Design a silicon resistor at 300 K with a resistance of 10 kΩ that can carry a current density of 50 A/cm² under 5 V. To meet these specs, calculate the required cross-sectional area and length from Ohm’s and drift equations. Then derive the necessary conductivity from geometry and resistance. Assuming a compensated p-type material formed by adding acceptors to donor-doped silicon (Nd = 5×10¹⁵ cm⁻³), use the relation σ ≈ eμp(Na − Nd). Iteratively adjust Na while accounting for mobility dependence on total impurity concentration. Result: Na ≈ 1.25×10¹⁶ cm⁻³ yields conductivity close to target. Highlights the nonlinear nature of doping-design due to mobility-concentration interplay.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 33,
+      "parent_id": "Design Example 5.4",
+      "example_id": "Design Example 5.4",
+      "original_length": 1965
+    }
+  },
+  {
+    "index": 34,
+    "example_id": "Example 5.5",
+    "token_count": 181,
+    "text_length": 634,
+    "summary_text": "Calculate the diffusion current density resulting from a linear electron density gradient. The key concept is Fick’s law for diffusion current, expressed as \\( J_{n,\\text{diff}} = eD_n (\\Delta n/\\Delta x) \\), where \\( D_n \\) is the electron diffusion coefficient and \\( \\Delta n/\\Delta x \\) represents the spatial concentration gradient. This law quantifies how charge carriers move from regions of high to low concentration, contributing to current without an electric field. Even a moderate gradient over a small distance yields substantial current density, underscoring the importance of diffusion effects in semiconductor devices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 34,
+      "parent_id": "Example 5.5",
+      "example_id": "Example 5.5",
+      "original_length": 828
+    }
+  },
+  {
+    "index": 35,
+    "example_id": "Example 5.6",
+    "token_count": 203,
+    "text_length": 623,
+    "summary_text": "Calculate the induced electric field in thermal equilibrium due to a linearly varying donor concentration in n-type silicon. The key concept is the built-in electric field resulting from nonuniform doping, which maintains equilibrium by counteracting diffusion. Given the donor profile \\(N_d(x) = 10^{16} - 10^{19}x\\), take its spatial derivative and plug it into the equilibrium field formula \\(E_x = -\frac{kT}{q} \frac{1}{N_d} \frac{dN_d}{dx}\\). At \\(x = 0\\), this yields \\(E_x = 25.9\\) V/cm. This shows that even gentle doping gradients can induce non-negligible electric fields, significantly impacting carrier transport.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 35,
+      "parent_id": "Example 5.6",
+      "example_id": "Example 5.6",
+      "original_length": 993
+    }
+  },
+  {
+    "index": 36,
+    "example_id": "Example 5.7",
+    "token_count": 139,
+    "text_length": 428,
+    "summary_text": "Given a carrier mobility of 1000 cm²/V·s at T = 300 K, the diffusion coefficient is computed using the Einstein relation: \\( D = (kT/e) \\mu \\). Substituting \\(kT/e = 0.0259\\) V at room temperature, we find \\( D = 25.9 \\, \\text{cm}^2/\\text{s} \\). This result illustrates the general proportionality between mobility and diffusion, where the diffusion coefficient is typically around 1/40th the mobility value at room temperature.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 36,
+      "parent_id": "Example 5.7",
+      "example_id": "Example 5.7",
+      "original_length": 596
+    }
+  },
+  {
+    "index": 37,
+    "example_id": "Example 5.8",
+    "token_count": 130,
+    "text_length": 415,
+    "summary_text": "Using Hall effect measurements on an n-type semiconductor sample, the majority carrier (electron) concentration is determined to be \\(5 \\times 10^{15} \\, \\text{cm}^{-3}\\). With consistent use of SI units, the electron mobility is calculated to be \\(1000 \\, \\text{cm}^2/\\text{V}\\cdot\\text{s}\\). The sign of the Hall voltage indicates the type of majority carrier, and accurate results depend on proper unit handling.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 37,
+      "parent_id": "Example 5.8",
+      "example_id": "Example 5.8",
+      "original_length": 1124
+    }
+  },
+  {
+    "index": 38,
+    "example_id": "Example 6.1",
+    "token_count": 150,
+    "text_length": 492,
+    "summary_text": "Calculate the time-dependent concentration of excess carriers after excitation ceases. The key concept is the exponential decay of excess carriers governed by the carrier lifetime \\( \\tau_0 \\). When generation stops at \\( t = 0 \\), the carrier concentration \\( \\delta n(t) \\) decays as \\( \\delta n(0) e^{-t/\\tau_0} \\). This behavior is characteristic of recombination-dominated processes in semiconductors and is distinct from scattering-limited motion described in mobility-related contexts.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 38,
+      "parent_id": "Example 6.1",
+      "example_id": "Example 6.1",
+      "original_length": 1244
+    }
+  },
+  {
+    "index": 39,
+    "example_id": "Example 6.2",
+    "token_count": 155,
+    "text_length": 536,
+    "summary_text": "This example analyzes the decay of excess carrier concentration over time in an n-type semiconductor under low-injection conditions, no electric field, and no generation after \\( t = 0 \\). Since the initial excess carrier concentration is uniform and static in space, the ambipolar transport equation simplifies to a first-order differential equation. The resulting solution shows an exponential decay governed by the minority carrier hole lifetime \\( \\tau_{p0} \\), where both excess electrons and holes decay as \\( e^{-t/\\tau_{p0}} \\).",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 39,
+      "parent_id": "Example 6.2",
+      "example_id": "Example 6.2",
+      "original_length": 2245
+    }
+  },
+  {
+    "index": 40,
+    "example_id": "Example 6.3",
+    "token_count": 120,
+    "text_length": 438,
+    "summary_text": "This example models how excess carriers build up over time in an n-type semiconductor after a uniform generation rate is applied at \\( t = 0 \\). Under low-injection and zero electric field conditions, the excess carrier concentration increases exponentially with time, governed by the minority carrier lifetime \\( \\tau_{p0} \\). The steady-state excess concentration is \\( g' \\tau_{p0} \\), where generation and recombination rates balance.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 40,
+      "parent_id": "Example 6.3",
+      "example_id": "Example 6.3",
+      "original_length": 1144
+    }
+  },
+  {
+    "index": 41,
+    "example_id": "Example 6.4",
+    "token_count": 189,
+    "text_length": 639,
+    "summary_text": "Calculate the steady-state excess carrier concentration as a function of distance from a point source. The key concept is the one-dimensional ambipolar transport equation under steady-state and zero-electric-field conditions, which reduces to a second-order differential equation describing spatial decay. The solution reveals that excess minority carriers diffuse symmetrically in both directions and decay exponentially with characteristic diffusion length \\(L_n = \\sqrt{D_n \\tau_n}\\). The boundary conditions imply symmetric exponential profiles with the value at any point \\(x\\) determined by \\(\\delta n(x) = \\delta n(0)e^{-|x|/L_n}\\).",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 41,
+      "parent_id": "Example 6.4",
+      "example_id": "Example 6.4",
+      "original_length": 2469
+    }
+  },
+  {
+    "index": 42,
+    "example_id": "Example 6.5",
+    "token_count": 156,
+    "text_length": 602,
+    "summary_text": "Calculate the excess carrier concentration as a function of time and space when a finite number of carriers are generated instantaneously at the origin. The key concept is solving the time-dependent ambipolar transport equation for minority carriers under drift and diffusion effects. The exponential decay term \\(e^{-t/\\tau_p}\\) accounts for carrier recombination, while the Gaussian distribution represents diffusion centered around a point moving at drift velocity \\(\\mu_p E_0\\). The final expression shows a Gaussian pulse that spreads and shifts over time due to diffusion and drift, respectively.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 42,
+      "parent_id": "Example 6.5",
+      "example_id": "Example 6.5",
+      "original_length": 1859
+    }
+  },
+  {
+    "index": 43,
+    "example_id": "Example 6.6",
+    "token_count": 163,
+    "text_length": 494,
+    "summary_text": "Calculate the dielectric relaxation time \\(\\tau_d\\) for n-type silicon with donor concentration \\(10^{16} \\, \\text{cm}^{-3}\\). Using known values for mobility and permittivity, the conductivity \\(\\sigma\\) and permittivity \\(\\epsilon\\) are determined. From \\(\\tau_d = \\epsilon / \\sigma\\), the result is \\(0.539\\) picoseconds. This very short relaxation time confirms that any net charge density disappears almost instantly, supporting the common assumption of quasi-neutrality in semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 43,
+      "parent_id": "Example 6.6",
+      "example_id": "Example 6.6",
+      "original_length": 1359
+    }
+  },
+  {
+    "index": 44,
+    "example_id": "Example 6.7",
+    "token_count": 214,
+    "text_length": 575,
+    "summary_text": "Calculate the quasi-Fermi levels in an n-type semiconductor under nonequilibrium with excess carriers \\(\\delta n = \\delta p = 10^{13} \\, \\text{cm}^{-3}\\). The key concept is the use of quasi-Fermi levels \\(E_{Fn}\\) and \\(E_{Fp}\\) to describe nonequilibrium carrier distributions. These levels shift from the intrinsic Fermi level \\(E_{Fi}\\) based on the total carrier concentrations. \\(E_{Fn}\\) moves slightly above \\(E_{Fi}\\) due to added electrons, and \\(E_{Fp}\\) drops below \\(E_{Fi}\\) due to added holes, reflecting the decoupling of carrier statistics in nonequilibrium.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 44,
+      "parent_id": "Example 6.7",
+      "example_id": "Example 6.7",
+      "original_length": 1118
+    }
+  },
+  {
+    "index": 45,
+    "example_id": "Example 6.8",
+    "token_count": 172,
+    "text_length": 585,
+    "summary_text": "Calculate the excess carrier lifetime \\(\\tau\\) in an intrinsic semiconductor under low-level injection. The key concept is the use of recombination rate formulas incorporating both electron and hole lifetimes, especially in intrinsic material where both carrier types contribute equally. When excess carrier concentration \\(\\delta n\\) is small, the recombination rate simplifies to \\(R = \\delta n / \\tau\\), and the lifetime becomes the sum of hole and electron lifetimes: \\(\\tau = \\tau_{p0} + \\tau_{n0}\\). This reflects the symmetric recombination behavior of intrinsic semiconductors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 45,
+      "parent_id": "Example 6.8",
+      "example_id": "Example 6.8",
+      "original_length": 1003
+    }
+  },
+  {
+    "index": 46,
+    "example_id": "Example 6.9",
+    "token_count": 203,
+    "text_length": 643,
+    "summary_text": "This example analyzes the steady-state spatial distribution of excess minority carriers in an n-type semiconductor, where the surface recombination lifetime \\(\\tau_{p0}\\) is shorter than the bulk lifetime \\(\\tau_p\\). By solving the ambipolar diffusion equation under steady-state conditions with a known generation rate and boundary values, the resulting carrier profile is shown to follow:\n\\[ \n\\delta p(x) = 10^{14}(1 - 0.9 e^{-x/L_p})\n\\]\nwhere the diffusion length \\(L_p\\) is derived as \\(31.6\\,\\mu\\text{m}\\). The result illustrates how surface recombination suppresses the excess carrier concentration near the surface relative to the bulk.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 46,
+      "parent_id": "Example 6.9",
+      "example_id": "Example 6.9",
+      "original_length": 1800
+    }
+  },
+  {
+    "index": 47,
+    "example_id": "Example 6.10",
+    "token_count": 205,
+    "text_length": 704,
+    "summary_text": "Calculate the surface recombination velocity based on excess carrier parameters near a semiconductor surface. The key concept is understanding how surface recombination impacts excess carrier decay and is quantified by the surface recombination velocity (s). Using the known steady-state surface excess concentration, diffusion coefficient, and diffusion length, the derived formula \n\\[ s = \\frac{D_p}{L_p} \\left( \\frac{g' \\tau_{p0}}{\\delta p(0)} - 1 \\right) \\] \nis applied. This gives \\( s = 2.85 \\times 10^4 \\, \\text{cm/s} \\), illustrating how significant surface effects can be in reducing carrier lifetimes near device surfaces, which is critical for applications like solar cells and photodetectors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 47,
+      "parent_id": "Example 6.10",
+      "example_id": "Example 6.10",
+      "original_length": 1018
+    }
+  },
+  {
+    "index": 48,
+    "example_id": "Example 7.1",
+    "token_count": 206,
+    "text_length": 642,
+    "summary_text": "Calculate the built-in potential barrier in a silicon pn junction using doping concentrations. The key concept is the equilibrium built-in potential \\( V_0 \\), which arises due to the difference in Fermi levels between the p- and n-regions before contact. It is calculated using the equation \\( V_0 = V_t \\ln \\left( \\frac{N_a N_d}{n_i^2} \\right) \\), where \\( V_t \\) is the thermal voltage and \\( n_i \\) is the intrinsic carrier concentration. Despite large variations in doping levels, the resulting change in \\( V_0 \\) is modest due to the logarithmic dependence, illustrating the stability of the built-in potential under doping variations.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 48,
+      "parent_id": "Example 7.1",
+      "example_id": "Example 7.1",
+      "original_length": 926
+    }
+  },
+  {
+    "index": 49,
+    "example_id": "Example 7.2",
+    "token_count": 211,
+    "text_length": 712,
+    "summary_text": "This example calculates the space charge width and peak electric field of a silicon pn junction at thermal equilibrium (zero bias). Using known doping concentrations and built-in potential, the depletion width \\(W\\) is computed from the permittivity of silicon and doping profiles, yielding \\(W = 0.951\\,\\mu\\text{m}\\). The depletion width divides asymmetrically across the junction, with more extension into the lower-doped p-region. The peak electric field at the junction is calculated as \\(E_{\\text{max}} = -1.34 \\times 10^4\\,\\text{V/cm}\\). The example highlights that while the electric field is strong, it does not result in current flow due to the absence of mobile charge carriers in the depletion region.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 49,
+      "parent_id": "Example 7.2",
+      "example_id": "Example 7.2",
+      "original_length": 1572
+    }
+  },
+  {
+    "index": 50,
+    "example_id": "Example 7.3",
+    "token_count": 210,
+    "text_length": 565,
+    "summary_text": "This example calculates the increase in the width of the space charge region in a silicon pn junction under reverse bias. With \\( N_a = 10^{16} \\, \\text{cm}^{-3} \\), \\( N_d = 10^{15} \\, \\text{cm}^{-3} \\), and an applied reverse bias of 5 V, the total potential barrier becomes \\( V_{bi} + V_R = 5.635 \\, \\text{V} \\). Substituting this into the junction width formula yields a depletion width \\( W = 2.83 \\, \\mu\\text{m} \\), significantly larger than the 0.951 µm width at zero bias. This illustrates that reverse bias increases the depletion region in a pn junction.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 50,
+      "parent_id": "Example 7.3",
+      "example_id": "Example 7.3",
+      "original_length": 946
+    }
+  },
+  {
+    "index": 51,
+    "example_id": "Design Example 7.4",
+    "token_count": 208,
+    "text_length": 609,
+    "summary_text": "Design a pn junction where the maximum electric field does not exceed \\( 2.5 \\times 10^6 \\, \\text{V/cm} \\) under a reverse-bias of 25 V. The key concept is the control of the peak electric field via doping profiles, using the equation for \\( E_{\\text{max}} \\) in terms of \\( V_R \\), \\( N_a \\), and \\( N_d \\). Neglecting the built-in potential due to its small contribution relative to the applied voltage, we solve the electric field expression for \\( N_d \\), yielding \\( 8.43 \\times 10^{15} \\, \\text{cm}^{-3} \\). This ensures that the device design remains below the critical breakdown threshold for silicon.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 51,
+      "parent_id": "Design Example 7.4",
+      "example_id": "Design Example 7.4",
+      "original_length": 1165
+    }
+  },
+  {
+    "index": 52,
+    "example_id": "Example 7.5",
+    "token_count": 135,
+    "text_length": 558,
+    "summary_text": "Calculate the junction capacitance of a reverse-biased pn junction. The key concept is that the depletion region behaves like a parallel plate capacitor, whose capacitance is inversely related to the square root of the reverse bias voltage. Using the doping concentrations and reverse voltage from Example 7.3, the differential capacitance per unit area is calculated via Equation (7.42), then scaled by the junction area to obtain total capacitance. The result is a small capacitance on the order of picofarads, consistent with typical pn junction behavior.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 52,
+      "parent_id": "Example 7.5",
+      "example_id": "Example 7.5",
+      "original_length": 738
+    }
+  },
+  {
+    "index": 53,
+    "example_id": "Example 7.6",
+    "token_count": 121,
+    "text_length": 456,
+    "summary_text": "Determine the doping concentrations in a silicon p⁺n junction based on C-V plot parameters. The slope of the 1/C² vs. V curve yields the donor concentration using a known dielectric constant. Using the intercept voltage (built-in potential), the acceptor concentration is calculated from the exponential relationship involving intrinsic carrier concentration and temperature. The results confirm the high-low (one-sided) junction assumption: \\(N_a ≫ N_d\\).",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 53,
+      "parent_id": "Example 7.6",
+      "example_id": "Example 7.6",
+      "original_length": 1193
+    }
+  },
+  {
+    "index": 54,
+    "example_id": "Design Example 7.7",
+    "token_count": 136,
+    "text_length": 518,
+    "summary_text": "Design a one-sided n⁺p junction diode to achieve a breakdown voltage of 100 V. By referencing empirical charts, the appropriate doping level for the lightly doped p-side is determined to be approximately \\(4 \times 10^{15} \\, \\text{cm}^{-3}\\). The key concept is that breakdown voltage is inversely related to doping concentration and can be analytically confirmed via the critical electric field formula. Using Equation (7.61), the calculated breakdown voltage closely matches the target, validating the design choice.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 54,
+      "parent_id": "Design Example 7.7",
+      "example_id": "Design Example 7.7",
+      "original_length": 1126
+    }
+  },
+  {
+    "index": 55,
+    "example_id": "Example 8.1",
+    "token_count": 166,
+    "text_length": 580,
+    "summary_text": "Calculate the minority carrier concentrations at the space-charge edges of a forward-biased pn junction. The key concept is the exponential dependence of minority carrier injection on applied forward bias, governed by the Boltzmann factor in \\( n_p(-x_p) \\) and \\( p_n(x_n) \\). Even a modest voltage (0.6 V) results in a several-orders-of-magnitude increase in minority carrier concentration due to \\( \\exp(eV/kT) \\). Despite the large increase, low-injection conditions are still satisfied as these minority values remain much smaller than their respective majority counterparts.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 55,
+      "parent_id": "Example 8.1",
+      "example_id": "Example 8.1",
+      "original_length": 1536
+    }
+  },
+  {
+    "index": 56,
+    "example_id": "Example 8.2",
+    "token_count": 187,
+    "text_length": 631,
+    "summary_text": "Calculate the ideal reverse-saturation current density \\( J_s \\) in a silicon pn junction. The key concept is that \\( J_s \\) depends on the intrinsic carrier concentration squared and the diffusion properties of minority carriers in both p and n regions. Using the equation involving diffusion constants, minority carrier lifetimes, and doping concentrations, we compute the reverse current as extremely small, on the order of \\( 10^{-11} \\, \\text{A/cm}^2 \\). This small magnitude confirms that under reverse bias, the ideal diode allows negligible current flow, making \\( J_s \\) a critical parameter in diode performance modeling.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 56,
+      "parent_id": "Example 8.2",
+      "example_id": "Example 8.2",
+      "original_length": 1249
+    }
+  },
+  {
+    "index": 57,
+    "example_id": "Example 8.3",
+    "token_count": 238,
+    "text_length": 709,
+    "summary_text": "Design a silicon pn junction diode that achieves electron and hole diffusion current densities of \\( J_n = 20 \\, \\text{A/cm}^2 \\) and \\( J_p = 5 \\, \\text{A/cm}^2 \\) under a forward bias of 0.65 V. The key concept is that the current densities depend exponentially on the applied voltage and inversely on the doping concentrations. By substituting into the current density equations for minority carrier injection, the required acceptor and donor doping levels are calculated as \\( N_a = 1.01 \\times 10^{15} \\, \\text{cm}^{-3} \\) and \\( N_d = 2.55 \\times 10^{15} \\, \\text{cm}^{-3} \\), respectively. This design demonstrates how targeted adjustment of doping levels can tune carrier injection in diode operation.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 57,
+      "parent_id": "Example 8.3",
+      "example_id": "Example 8.3",
+      "original_length": 1640
+    }
+  },
+  {
+    "index": 58,
+    "example_id": "Example 8.4",
+    "token_count": 235,
+    "text_length": 670,
+    "summary_text": "This example calculates the electric field required in the neutral region of a silicon diode to sustain the majority carrier drift current under forward bias. Given a reverse-saturation current density of \\(4.155 \\times 10^{-11} \\, \\text{A/cm}^2\\), and a forward bias of 0.65 V, the total current density is \\(3.295 \\, \\text{A/cm}^2\\). Using this value and known parameters (\\(N_d = 10^{16} \\, \\text{cm}^{-3}\\), \\(\\mu_n = 1350 \\, \\text{cm}^2/\\text{V·s}\\)), the electric field is calculated to be \\(1.525 \\, \\text{V/cm}\\). The result confirms that the electric field in neutral regions is small, validating the assumption of field-free neutral regions in the diode model.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 58,
+      "parent_id": "Example 8.4",
+      "example_id": "Example 8.4",
+      "original_length": 1382
+    }
+  },
+  {
+    "index": 59,
+    "example_id": "Example 8.5",
+    "token_count": 133,
+    "text_length": 552,
+    "summary_text": "This example computes how much the forward-bias voltage on a silicon pn junction must decrease to maintain a constant diode current when the temperature increases from 300 K to 310 K. Using the relation between diode current, temperature, and applied voltage, the required voltage is recalculated to satisfy the constant current condition. The result shows that the voltage must drop from 0.60 V to 0.5827 V, a change of −17.3 mV. This illustrates how temperature rise leads to a reduction in required forward-bias voltage to maintain the same current.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 59,
+      "parent_id": "Example 8.5",
+      "example_id": "Example 8.5",
+      "original_length": 1299
+    }
+  },
+  {
+    "index": 60,
+    "example_id": "Example 8.6",
+    "token_count": 137,
+    "text_length": 540,
+    "summary_text": "This example compares the ideal reverse-saturation current density and the generation current density in a reverse-biased silicon pn junction. With specified doping, diffusion constants, and carrier lifetimes, the ideal saturation current is found to be much smaller (≈4.16×10^-11 A/cm^2) than the generation current (≈2.91×10^-7 A/cm^2). The ratio between them is about 7000, indicating that under reverse bias at room temperature, generation current dominates. This insight is crucial for understanding reverse leakage behavior in diodes.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 60,
+      "parent_id": "Example 8.6",
+      "example_id": "Example 8.6",
+      "original_length": 1937
+    }
+  },
+  {
+    "index": 61,
+    "example_id": "Example 8.7",
+    "token_count": 123,
+    "text_length": 511,
+    "summary_text": "This example computes the small-signal parameters of a forward-biased pn junction diode. Assuming high doping on the n-side and a dominant hole current, the diffusion capacitance is found to be 1.93 nF and the diffusion resistance is 25.9 Ω. The key insight is that diffusion capacitance in forward bias can be orders of magnitude larger than the junction capacitance observed under reverse bias conditions (as seen in Example 7.5), significantly impacting dynamic diode behavior in high-frequency applications.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 61,
+      "parent_id": "Example 8.7",
+      "example_id": "Example 8.7",
+      "original_length": 1114
+    }
+  },
+  {
+    "index": 62,
+    "example_id": "Example 9.1",
+    "token_count": 130,
+    "text_length": 543,
+    "summary_text": "This example analyzes a metal–semiconductor (Schottky) contact between tungsten and n-type silicon at room temperature. The ideal barrier height is calculated as 0.54 V, and the built-in potential barrier is 0.334 V after accounting for the energy difference between the conduction band and Fermi level. The depletion width at zero bias is approximately 0.208 μm, and the maximum electric field at the junction is about 3.21×10⁴ V/cm. These values are comparable to those found in pn junctions, indicating similar space charge region behavior.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 62,
+      "parent_id": "Example 9.1",
+      "example_id": "Example 9.1",
+      "original_length": 1544
+    }
+  },
+  {
+    "index": 63,
+    "example_id": "Example 9.2",
+    "token_count": 202,
+    "text_length": 565,
+    "summary_text": "This example uses capacitance–voltage (C–V) data to extract the doping concentration and Schottky barrier height of a tungsten–silicon Schottky diode at 300 K. From the slope of the \\(1/C'^2\\) vs. \\(V_R\\) curve, the doping level is computed as \\(2.7 × 10^{17} \\, \text{cm}^{-3}\\). Using this and the built-in potential \\(V_{bi} = 0.40 \\, \text{V}\\), the Schottky barrier height is calculated to be \\(0.52 \\, \text{V}\\). This matches closely with the ideal barrier height of \\(0.54 \\, \text{V}\\) from Example 9.1, indicating good agreement between theory and experiment.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 63,
+      "parent_id": "Example 9.2",
+      "example_id": "Example 9.2",
+      "original_length": 1360
+    }
+  },
+  {
+    "index": 64,
+    "example_id": "Example 9.3",
+    "token_count": 132,
+    "text_length": 457,
+    "summary_text": "This example calculates the Schottky barrier lowering and the location of the maximum potential barrier for a GaAs metal–semiconductor contact under an electric field of \\(6.8 × 10^4\\) V/cm. The barrier lowering is found to be \\(0.0273 \\, \text{V}\\), and the position of the barrier maximum is \\(x_m = 20 \\, \text{Å}\\). Despite the small value, this reduction has an exponential impact on current, making it significant in the I–V behavior of Schottky diodes.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 64,
+      "parent_id": "Example 9.3",
+      "example_id": "Example 9.3",
+      "original_length": 1087
+    }
+  },
+  {
+    "index": 65,
+    "example_id": "Example 9.4",
+    "token_count": 116,
+    "text_length": 494,
+    "summary_text": "Calculate the effective Richardson constant from experimental current–voltage data for a tungsten–silicon Schottky diode. The key concept is thermionic emission theory, where current density depends exponentially on the barrier height and linearly on the Richardson constant. Using the measured saturation current and barrier height, the effective Richardson constant \\(A^*\\) is determined as 114 A/K²·cm². This value is highly sensitive to the barrier height due to the exponential dependence.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 65,
+      "parent_id": "Example 9.4",
+      "example_id": "Example 9.4",
+      "original_length": 832
+    }
+  },
+  {
+    "index": 66,
+    "example_id": "Example 9.5",
+    "token_count": 228,
+    "text_length": 600,
+    "summary_text": "Compare the reverse-saturation current densities of a Schottky barrier diode and a silicon pn junction diode. Using thermionic emission theory, the Schottky diode with barrier height \\( \\phi_{Bn} = 0.67 \\text{ eV} \\) and Richardson constant \\( A^* = 114 \\text{ A/K}^2\\cdot\\text{cm}^2 \\) yields \\( J_{sT} = 5.98 \\times 10^{-5} \\text{ A/cm}^2 \\). The pn junction diode, calculated using diffusion theory with specified parameters, gives \\( J_s = 3.66 \\times 10^{-11} \\text{ A/cm}^2 \\). This demonstrates that the Schottky diode has a much higher leakage current under reverse bias than the pn junction.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 66,
+      "parent_id": "Example 9.5",
+      "example_id": "Example 9.5",
+      "original_length": 1773
+    }
+  },
+  {
+    "index": 67,
+    "example_id": "Example 9.6",
+    "token_count": 109,
+    "text_length": 413,
+    "summary_text": "To achieve a forward current density of 10 A/cm², the required voltage for a Schottky barrier diode is 0.312 V, while for a pn junction diode it is 0.682 V, based on their respective saturation current densities. This illustrates that Schottky diodes have a significantly lower turn-on voltage—approximately 0.37 V lower in this case—than pn junction diodes, making them advantageous for low-voltage applications.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 67,
+      "parent_id": "Example 9.6",
+      "example_id": "Example 9.6",
+      "original_length": 1204
+    }
+  },
+  {
+    "index": 68,
+    "example_id": "Example 9.7",
+    "token_count": 117,
+    "text_length": 523,
+    "summary_text": "Calculate the space charge width of a Schottky barrier on heavily doped silicon. The key concept is the relationship between doping concentration and depletion width, where high doping results in a significantly reduced space charge region. Using the standard depletion width equation and assuming the built-in potential equals the barrier height, the result is a narrow depletion width of 110 Å. This extremely small width suggests quantum mechanical tunneling can dominate the current transport mechanism in such devices.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 68,
+      "parent_id": "Example 9.7",
+      "example_id": "Example 9.7",
+      "original_length": 926
+    }
+  },
+  {
+    "index": 69,
+    "example_id": "Example 9.8",
+    "token_count": 177,
+    "text_length": 656,
+    "summary_text": "Calculate the conduction band offset (ΔE_c), valence band offset (ΔE_v), and built-in potential (V_bi) for an n-Ge/P-GaAs heterojunction. The key concept is the electron affinity rule for heterojunction band alignment, where the band discontinuities are determined from differences in material properties such as bandgap and electron affinity. ΔE_c and ΔE_v quantify the asymmetry in energy band alignment, which impacts carrier injection. The built-in potential V_bi incorporates both band offsets and carrier concentration effects, and its evaluation shows that asymmetry in the heterojunction leads to unequal potential barriers for electrons and holes.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 69,
+      "parent_id": "Example 9.8",
+      "example_id": "Example 9.8",
+      "original_length": 1232
+    }
+  },
+  {
+    "index": 70,
+    "example_id": "Example 10.1",
+    "token_count": 175,
+    "text_length": 619,
+    "summary_text": "This example calculates the maximum space charge width (depletion width) in silicon with a doping level of \\(10^{16} \\, \text{cm}^{-3}\\) at 300 K. First, the potential \\(\\Phi_p\\) is calculated using the thermal voltage and the ratio of doping to intrinsic carrier concentration. This potential is then used to compute the maximum depletion width \\(x_{scr}\\), resulting in approximately 0.30 μm. The result shows that the induced space charge region in a MOS structure is comparable in magnitude to the depletion width in a pn junction, highlighting the similar physical scales involved in these semiconductor structures.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 70,
+      "parent_id": "Example 10.1",
+      "example_id": "Example 10.1",
+      "original_length": 907
+    }
+  },
+  {
+    "index": 71,
+    "example_id": "Example 10.2",
+    "token_count": 190,
+    "text_length": 655,
+    "summary_text": "This example calculates the metal–semiconductor work function difference \\(\\phi_{ms}\\) for a MOS structure composed of aluminum and p-type silicon with silicon dioxide as the insulator. Using the given values of metal and semiconductor work functions and the doping concentration of the p-type substrate, the bulk potential \\(\\phi_b\\) is computed first. Then, \\(\\phi_{ms}\\) is found by subtracting the semiconductor’s effective work function from that of the metal. The resulting value of \\(\\phi_{ms} = -0.898\\,\\text{V}\\) indicates a negative work function difference, which will decrease further (i.e., become more negative) with higher substrate doping.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 71,
+      "parent_id": "Example 10.2",
+      "example_id": "Example 10.2",
+      "original_length": 946
+    }
+  },
+  {
+    "index": 72,
+    "example_id": "Example 10.3",
+    "token_count": 224,
+    "text_length": 651,
+    "summary_text": "This example calculates the flat-band voltage \\(V_{FB}\\) for a MOS capacitor with a p-type silicon substrate. Given the doping level, oxide thickness, gate material, and oxide charge, the oxide capacitance per unit area \\(C_{ox}\\) and the charge density \\(Q'_{ox}\\) are calculated. These values are used with the known work function difference \\(\\phi_{ms} = -1.1\\,\\text{V}\\) to compute the flat-band voltage:\n\n\\[ V_{FB} = \\phi_{ms} - \\frac{Q'_{ox}}{C_{ox}} = -1.15 \\, \\text{V} \\]\n\nThis negative flat-band voltage indicates that a negative gate bias is required to align the energy bands flat, and it becomes more negative with increasing oxide charge.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 72,
+      "parent_id": "Example 10.3",
+      "example_id": "Example 10.3",
+      "original_length": 1289
+    }
+  },
+  {
+    "index": 73,
+    "example_id": "Example 10.4",
+    "token_count": 212,
+    "text_length": 676,
+    "summary_text": "This example calculates the threshold voltage \\(V_{TN}\\) of a MOS capacitor with an aluminum gate, lightly doped p-type silicon substrate, and silicon dioxide insulator. Using the given parameters, including oxide thickness \\(t_{ox} = 12\\,\\text{nm}\\), work function difference \\(\\phi_{ms} = -0.88\\,V\\), and fixed oxide and inversion charges, the oxide capacitance and surface charge are computed. Applying these values, the threshold voltage is found to be:\n\n\\[ V_{TN} = -0.262 \\, \\text{V} \\]\n\nThe negative threshold voltage indicates that an inversion layer can form at zero gate voltage due to the combined effect of light doping, oxide charge, and work function difference.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 73,
+      "parent_id": "Example 10.4",
+      "example_id": "Example 10.4",
+      "original_length": 1570
+    }
+  },
+  {
+    "index": 74,
+    "example_id": "Example 10.5",
+    "token_count": 262,
+    "text_length": 713,
+    "summary_text": "This design example determines the appropriate gate material and doping concentration for a MOS system to achieve a threshold voltage of \\(V_{TP} = -0.3\\,\\text{V}\\). Using a p\\(^+\\) polysilicon gate with \\(\\phi_{ms} = +1.1\\,\\text{V}\\) and an n-type silicon substrate with doping \\(N_d = 10^{17}\\,\\text{cm}^{-3}\\), the relevant parameters such as \\(\\phi_b\\), depletion width \\(x_{dm}\\), and maximum surface charge \\(|Q_{si}(\\text{max})|\\) are computed. Substituting these values, the threshold voltage is found to be approximately:\n\n\\[ V_{TP} = -0.296 \\, \\text{V} \\approx -0.3 \\, \\text{V} \\]\n\nThe result confirms that the device is in enhancement mode, requiring a negative gate voltage to form an inversion layer.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 74,
+      "parent_id": "Example 10.5",
+      "example_id": "Example 10.5",
+      "original_length": 2497
+    }
+  },
+  {
+    "index": 75,
+    "example_id": "Example 10.6",
+    "token_count": 274,
+    "text_length": 630,
+    "summary_text": "This example calculates three key capacitances of a MOS capacitor on p-type silicon with an aluminum gate and 18 nm thick SiO₂ oxide at 300 K and \\(N_a = 10^{16} \\, \\text{cm}^{-3}\\). The results are:\n\n- Oxide capacitance:\n  \\[ C_{ox} = 1.9175 \\times 10^{-7} \\, \\text{F/cm}^2 \\]\n\n- Inversion (minimum) capacitance:\n  \\[ C'_{min} = 2.925 \\times 10^{-8} \\, \\text{F/cm}^2 \\],  ratio: \\(C'_{min}/C_{ox} = 0.1525\\)\n\n- Flat-band capacitance:\n  \\[ C'_{FB} = 1.091 \\times 10^{-7} \\, \\text{F/cm}^2 \\],  ratio: \\(C'_{FB}/C_{ox} = 0.569\\)\n\nThese ratios are consistent with typical MOS C–V characteristics, confirming expected device behavior.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 75,
+      "parent_id": "Example 10.6",
+      "example_id": "Example 10.6",
+      "original_length": 1992
+    }
+  },
+  {
+    "index": 76,
+    "example_id": "Example 10.7",
+    "token_count": 293,
+    "text_length": 617,
+    "summary_text": "Calculate the required channel width \\(W\\) for a MOSFET that must deliver a specified saturation current. The key concept is the MOSFET saturation region current equation:\n\n\\[ I_D(sat) = \\frac{W \\mu_n C_{ox}}{2L} (V_{GS} - V_T)^2 \\]\n\nGiven \\(I_D(sat) = 4 \\, \\text{mA}\\), \\(V_{GS} = 5 \\, \\text{V}\\), \\(V_T = 0.65 \\, \\text{V}\\), \\(\\mu_n = 650 \\, \\text{cm}^2/\\text{V}\\cdot\\text{s}\\), \\(C_{ox} = 6.9 \\times 10^{-8} \\, \\text{F/cm}^2\\), and \\(L = 1.25 \\, \\mu m\\), solve for \\(W\\). Substituting into the formula yields \\(W = 11.8 \\, \\mu m\\). This shows that MOSFET current control is linearly dependent on the channel width.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 76,
+      "parent_id": "Example 10.7",
+      "example_id": "Example 10.7",
+      "original_length": 908
+    }
+  },
+  {
+    "index": 77,
+    "example_id": "Example 10.8",
+    "token_count": 267,
+    "text_length": 687,
+    "summary_text": "Calculate the inversion layer carrier mobility \\(\\mu_n\\) from two measured drain currents in the nonsaturation region of a MOSFET. The key concept is to apply the linear (nonsaturation) region drain current equation:\n\n\\[ I_D = \\frac{W \\mu_n C_{ox}}{L} (V_{GS} - V_T) V_{DS} \\]\n\nSince \\(V_T\\) is not yet known, we eliminate it by using the difference in currents at two different \\(V_{GS}\\) values but constant \\(V_{DS}\\), yielding:\n\n\\[ \\Delta I_D = \\frac{W \\mu_n C_{ox}}{L} \\Delta V_{GS} \\cdot V_{DS} \\]\n\nSubstituting the given values provides \\(\\mu_n = 773\\, \\text{cm}^2/\\text{V·s}\\). This result reflects the reduced mobility due to surface scattering effects in the inversion channel.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 77,
+      "parent_id": "Example 10.8",
+      "example_id": "Example 10.8",
+      "original_length": 968
+    }
+  },
+  {
+    "index": 78,
+    "example_id": "Example 10.9",
+    "token_count": 323,
+    "text_length": 738,
+    "summary_text": "This example computes the **body-effect coefficient** (\\(\\gamma\\)) and resulting **threshold voltage shift** (\\(\\Delta V_T\\)) due to a nonzero source-to-body voltage (\\(V_{SB}\\)) in an n-channel MOSFET.\n\n1. The body-effect coefficient \\(\\gamma\\) quantifies how much the threshold voltage increases as \\(V_{SB}\\) rises:\n\\[ \\gamma = \\frac{\\sqrt{2 q \\varepsilon_s N_a}}{C_{ox}} \\Rightarrow 0.5776 \\, \\text{V}^{1/2} \\]\n\n2. The change in threshold voltage due to \\(V_{SB} = 1\\, \\text{V}\\) is:\n\\[ \\Delta V_T = \\gamma \\left( \\sqrt{2 \\phi_p + V_{SB}} - \\sqrt{2 \\phi_p} \\right) = 0.264 \\, \\text{V} \\]\n\nThis shows that the threshold voltage increases when the body is not at the same potential as the source, making it harder to turn on the MOSFET.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 78,
+      "parent_id": "Example 10.9",
+      "example_id": "Example 10.9",
+      "original_length": 1581
+    }
+  },
+  {
+    "index": 79,
+    "example_id": "Example 10.10",
+    "token_count": 225,
+    "text_length": 593,
+    "summary_text": "Calculate the **cutoff frequency** of an n-channel MOSFET assuming ideal conditions with constant mobility.\n\nThe key concept is that the cutoff frequency $f_T$ defines the upper limit of frequency operation for a MOSFET and depends on mobility, overdrive voltage, and channel length. It is calculated using:\n\\[\nf_T = \\frac{\\mu_n (V_{GS} - V_T)}{2 \\pi L^2}\n\\]\nGiven $\\mu_n = 400\\ \\text{cm}^2/\\text{V·s}$, $L = 4\\ \\mu m$, and $V_{GS} - V_T = 2\\ \\text{V}$, we get $f_T = 796\\ \\text{MHz}$. This is an idealized upper limit; real-world parasitic capacitance will lower this frequency significantly.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 79,
+      "parent_id": "Example 10.10",
+      "example_id": "Example 10.10",
+      "original_length": 680
+    }
+  },
+  {
+    "index": 80,
+    "example_id": "Example 11.1",
+    "token_count": 136,
+    "text_length": 516,
+    "summary_text": "This example calculates how **short-channel effects** increase the **drain current** in a MOSFET. With given bias conditions and doping values, the effective shortening of the channel length (ΔL ≈ 0.1807 µm) leads to a **22% increase** in drain current:\n\n\\[ \\frac{I_D}{I_{D0}} = 1.22 \\]\n\nShort-channel modulation reduces the effective channel length, thereby increasing the saturation current beyond the ideal value. This is critical in scaled-down MOSFETs where physical dimensions significantly affect performance.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 80,
+      "parent_id": "Example 11.1",
+      "example_id": "Example 11.1",
+      "original_length": 1327
+    }
+  },
+  {
+    "index": 81,
+    "example_id": "Example 11.2",
+    "token_count": 243,
+    "text_length": 690,
+    "summary_text": "This example calculates the **effective transverse electric field** at the **threshold condition** for a p-type silicon substrate with doping concentration $N_a = 3 \\times 10^{16} \\, \\text{cm}^{-3}$. Using electrostatic analysis:\n\n- The surface potential is $\\phi_{fp} = 0.376\\,\\text{V}$\n- The depletion width at threshold is $x_T = 0.18\\,\\mu\\text{m}$\n- The depletion charge is $|Q_{SD}(\\text{max})| = 8.64 \\times 10^{-8}\\, \\text{C/cm}^2$\n- The effective electric field is \n\n\\[ E_{\\text{eff}} = 8.34 \\times 10^4 \\, \\text{V/cm} \\]\n\nThis electric field strength is large enough to reduce carrier mobility due to surface scattering, explaining degradation in MOSFET performance near threshold.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 81,
+      "parent_id": "Example 11.2",
+      "example_id": "Example 11.2",
+      "original_length": 1318
+    }
+  },
+  {
+    "index": 82,
+    "example_id": "Example 11.3",
+    "token_count": 235,
+    "text_length": 794,
+    "summary_text": "Calculate the **threshold voltage shift** (ΔV_T) caused by **short-channel effects** in an n-channel MOSFET with substrate doping $N_A = 3 \\times 10^{16}\\, \\text{cm}^{-3}$ and channel length $L = 1.0\\,\\mu\\text{m}$. The analysis considers the built-in depletion width and junction depth to quantify the reduction in threshold voltage due to source/drain charge sharing. \n\nThe key concept is that in short-channel devices, part of the depletion charge is supported by the source and drain junctions, reducing the amount of gate voltage needed to invert the channel. This results in a negative shift in $V_T$. The calculated shift of $$\\Delta V_T = -0.0726\\,\\text{V}$$ illustrates a significant short-channel effect that must be compensated in device design to maintain desired threshold behavior.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 82,
+      "parent_id": "Example 11.3",
+      "example_id": "Example 11.3",
+      "original_length": 1558
+    }
+  },
+  {
+    "index": 83,
+    "example_id": "Example 11.4",
+    "token_count": 256,
+    "text_length": 617,
+    "summary_text": "Design the **channel width** \\( W \\) required to ensure that the **threshold voltage shift** \\( \\Delta V_T \\) due to **narrow channel effects** does not exceed 0.2 V in a silicon n-channel MOSFET with doping \\( N_s = 3 \\times 10^{16} \\, \\text{cm}^{-3} \\) and oxide thickness \\( t_{ox} = 20 \\, \\text{nm} \\).\n\nUsing the derived equation from narrow channel theory,\n$$\nW = \\frac{eN_s \\xi x_{tr}^2}{C_{ox} \\Delta V_T},\n$$\nwith \\( \\xi = \\frac{\\pi}{2} \\approx 1.57 \\), the result is\n$$\nW = 0.708 \\, \\mu m.\n$$\nThis ensures that the narrow channel effect-induced threshold voltage shift stays within the design specification.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 83,
+      "parent_id": "Example 11.4",
+      "example_id": "Example 11.4",
+      "original_length": 1047
+    }
+  },
+  {
+    "index": 84,
+    "example_id": "Example 11.5",
+    "token_count": 369,
+    "text_length": 838,
+    "summary_text": "**Calculate the punch-through voltage** for an **n-channel MOSFET** with:\n- Source/Drain doping: \\( N_d = 10^{19} \\, \\text{cm}^{-3} \\)\n- Channel doping: \\( N_a = 10^{16} \\, \\text{cm}^{-3} \\)\n- Channel length: \\( L = 1.2 \\, \\mu\\text{m} \\)\n\nUsing the **abrupt junction approximation**, the steps are:\n1. Compute built-in potential: \\( V_{bi} = 0.874 \\, \\text{V} \\)\n2. Compute source-side depletion width: \\( x_{s0} = 0.336 \\, \\mu\\text{m} \\)\n3. At punch-through: \\( x_j = L - x_{s0} = 0.864 \\, \\mu\\text{m} \\)\n4. Compute total reverse voltage at punch-through: \\( V_{bi} + V_{DS} = 5.77 \\, \\text{V} \\)\n5. Subtract built-in potential to get final result:\n\n\\[ V_{DS} = 5.77 - 0.874 = \\boxed{4.9 \\, \\text{V}} \\]\n\n**Insight:** This voltage is an upper bound; actual punch-through occurs earlier due to breakdown of the abrupt junction assumption.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 84,
+      "parent_id": "Example 11.5",
+      "example_id": "Example 11.5",
+      "original_length": 1742
+    }
+  },
+  {
+    "index": 85,
+    "example_id": "Example 11.6",
+    "token_count": 434,
+    "text_length": 974,
+    "summary_text": "**Design target:** Adjust threshold voltage to \\( V_T = +0.4 \\, V \\) for an n-channel MOSFET with:\n- Substrate doping: \\( N_a = 5 \\times 10^{15} \\, \\text{cm}^{-3} \\)\n- Oxide thickness: \\( t_{ox} = 180 \\text{ Å} \\)\n- Initial flat-band voltage: \\( V_{FB0} = -1.25 \\, V \\)\n\n**Steps:**\n1. Calculate initial \\( \\phi_{fp0} = 0.3294 \\, V \\) and space charge width \\( x_{dT0} = 0.4130 \\times 10^{-4} \\, \\text{cm} \\)\n2. Compute oxide capacitance: \\( C_{ox} = 1.9175 \\times 10^{-7} \\, \\text{F/cm}^2 \\)\n3. Initial threshold voltage: \\( V_{T0} = -0.419 \\, V \\)\n4. Implantation dose needed:\n   \\[ D_I = \\boxed{9.815 \\times 10^{11} \\, \\text{cm}^{-2}} \\]\n5. With depth \\( x_j = 0.15 \\, \\mu m \\), final surface concentration:\n   \\[ N_s = \\boxed{7.04 \\times 10^{16} \\, \\text{cm}^{-3}} \\]\n\n**Insight:** Ion implantation effectively shifts the threshold voltage, and the implant depth and dose must be tailored to maintain surface conditions compatible with the desired device characteristics.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 85,
+      "parent_id": "Example 11.6",
+      "example_id": "Example 11.6",
+      "original_length": 1767
+    }
+  },
+  {
+    "index": 86,
+    "example_id": "Exercise 11.7",
+    "token_count": 192,
+    "text_length": 675,
+    "summary_text": "Calculate the threshold voltage shift caused by radiation-induced positive oxide charges. The key concept is the relationship between trapped charge at the oxide–semiconductor interface and its impact on threshold voltage. Radiation generates electron–hole pairs in the oxide; electrons are swept out, but a fraction of holes remain trapped. These positive trapped charges effectively act as a fixed oxide charge, reducing the threshold voltage. The shift is computed via $\\Delta V_T = -Q_i / C_{ox}$, where $Q_i$ is the induced charge density and $C_{ox}$ is the oxide capacitance per unit area. In this case, a significant negative shift of $-0.579 \\ \\text{V}$ is observed.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 86,
+      "parent_id": "Exercise 11.7",
+      "example_id": "Exercise 11.7",
+      "original_length": 1343
+    }
+  },
+  {
+    "index": 87,
+    "example_id": "Example 12.1",
+    "token_count": 212,
+    "text_length": 572,
+    "summary_text": "This example calculates the emitter injection efficiency $\\gamma$ of a bipolar junction transistor using given doping concentrations ($N_B$, $N_E$), diffusion constants ($D_B$, $D_E$), and region widths ($x_B$, $x_E$). The efficiency is given by the formula $\\gamma = \\frac{1}{1 + \\left(\\frac{N_B}{N_E} \\cdot \\frac{D_E}{D_B} \\cdot \\frac{x_B}{x_E}\\right)}$, which quantifies how effectively carriers are injected from the emitter into the base. In this case, the result is $\\gamma = 0.9934$, indicating a very high injection efficiency typical of well-designed transistors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 87,
+      "parent_id": "Example 12.1",
+      "example_id": "Example 12.1",
+      "original_length": 672
+    }
+  },
+  {
+    "index": 88,
+    "example_id": "Example 12.2",
+    "token_count": 140,
+    "text_length": 403,
+    "summary_text": "This example calculates the base transport factor $\\alpha_T$ of a bipolar junction transistor, which measures the efficiency of minority carrier transport across the base. Using the formula $\\alpha_T \\approx \\frac{1}{\\cosh(x_B / L_B)}$ and the given values $x_B = 0.80 \\, \\mu m$ and $L_B = 10.0 \\, \\mu m$, we find $\\alpha_T = 0.9968$, indicating very efficient carrier transport through the base region.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 88,
+      "parent_id": "Example 12.2",
+      "example_id": "Example 12.2",
+      "original_length": 415
+    }
+  },
+  {
+    "index": 89,
+    "example_id": "Example 12.3",
+    "token_count": 120,
+    "text_length": 529,
+    "summary_text": "Calculate the recombination factor in a bipolar junction transistor. The key concept is understanding how recombination in the base-emitter junction affects current transport efficiency. The problem involves evaluating recombination current density and comparing it to diffusion current to compute a correction factor. This concept is crucial in analyzing non-ideal behavior in BJTs, especially at low injection levels or short base widths. Accurately modeling recombination helps in predicting real-world transistor performance.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 89,
+      "parent_id": "Example 12.3",
+      "example_id": "Example 12.3",
+      "original_length": 1155
+    }
+  },
+  {
+    "index": 90,
+    "example_id": "Example 12.4",
+    "token_count": 134,
+    "text_length": 587,
+    "summary_text": "Design the emitter-to-base doping ratio to achieve a specific emitter injection efficiency. The key concept is the relationship between doping concentrations and emitter injection efficiency in a bipolar junction transistor. A high emitter injection efficiency requires that the emitter be heavily doped relative to the base. This design approach minimizes the recombination of minority carriers in the emitter, enhancing overall transistor performance. The example simplifies the analysis by assuming equal diffusion coefficients, diffusion lengths, and widths for the emitter and base.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 90,
+      "parent_id": "Example 12.4",
+      "example_id": "Example 12.4",
+      "original_length": 666
+    }
+  },
+  {
+    "index": 91,
+    "example_id": "Example 12.5",
+    "token_count": 126,
+    "text_length": 613,
+    "summary_text": "Design the base width to meet a specific base transport factor in a bipolar transistor. The key concept is understanding the relationship between base width and the base transport factor, which quantifies how efficiently minority carriers diffuse through the base without recombining. A smaller base width improves transport efficiency by reducing the distance carriers must travel, thereby increasing the current gain. This design demonstrates how to determine the optimal base width based on diffusion parameters and desired transport efficiency. The analysis is applicable to both pnp and npn transistor types.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 91,
+      "parent_id": "Example 12.5",
+      "example_id": "Example 12.5",
+      "original_length": 848
+    }
+  },
+  {
+    "index": 92,
+    "example_id": "Example 12.6",
+    "token_count": 127,
+    "text_length": 570,
+    "summary_text": "Calculate the forward base-emitter voltage required to achieve a specific recombination factor in a bipolar transistor. The key concept is the impact of base-emitter junction voltage on carrier recombination and its influence on the recombination factor, which affects the overall current gain. This problem highlights how recombination in the emitter-base space charge region becomes significant at lower bias voltages. Accurately controlling the base-emitter voltage is essential to maintain a high recombination factor and thus achieve desired transistor performance.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 92,
+      "parent_id": "Example 12.6",
+      "example_id": "Example 12.6",
+      "original_length": 1047
+    }
+  },
+  {
+    "index": 93,
+    "example_id": "Example 12.7",
+    "token_count": 138,
+    "text_length": 661,
+    "summary_text": "Calculate the common-emitter current gain of a bipolar junction transistor based on physical and electrical parameters. The key concept is understanding how the three intrinsic performance factors—emitter injection efficiency, base transport factor, and recombination factor—combine to determine the overall current gain. Each factor reflects a different physical process within the transistor: charge injection from emitter to base, carrier transport through the base, and recombination losses. Accurate calculation of these parameters reveals which process limits performance. This type of analysis is fundamental in designing transistors with optimized gain.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 93,
+      "parent_id": "Example 12.7",
+      "example_id": "Example 12.7",
+      "original_length": 2155
+    }
+  },
+  {
+    "index": 94,
+    "example_id": "Example 12.8",
+    "token_count": 143,
+    "text_length": 626,
+    "summary_text": "Calculate how the collector current varies with changes in neutral base width and estimate the Early voltage. The key concept is the Early effect, which describes how a reduction in the neutral base width due to increased collector-base reverse bias leads to increased collector current. This phenomenon is critical in bipolar junction transistors and influences the output characteristics by introducing a dependency of collector current on collector voltage. Understanding and quantifying this dependency allows for estimation of the Early voltage, an important parameter for modeling transistor behavior and gain stability.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 94,
+      "parent_id": "Example 12.8",
+      "example_id": "Example 12.8",
+      "original_length": 2269
+    }
+  },
+  {
+    "index": 95,
+    "example_id": "Example 12.9",
+    "token_count": 153,
+    "text_length": 685,
+    "summary_text": "Calculate the change in equilibrium hole concentration in the emitter due to bandgap narrowing. The key concept is that heavy doping in the emitter leads to a narrowing of the energy bandgap, which increases the intrinsic carrier concentration locally and, counterintuitively, results in a higher minority carrier concentration than predicted by the simple inverse doping relationship. This phenomenon significantly impacts bipolar transistor behavior, especially in highly doped regions where carrier injection and recombination rates are sensitive to these shifts. Bandgap narrowing must be taken into account when designing for high doping levels to ensure accurate device modeling.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 95,
+      "parent_id": "Example 12.9",
+      "example_id": "Example 12.9",
+      "original_length": 1782
+    }
+  },
+  {
+    "index": 96,
+    "example_id": "Example 12.10",
+    "token_count": 154,
+    "text_length": 711,
+    "summary_text": "Design the collector doping and width to meet a specified punch-through voltage. The key concept is punch-through breakdown, which occurs when the depletion region in the base-collector junction extends entirely through the base region, causing a sudden increase in collector current. To prevent this, proper selection of the collector doping concentration and physical width is essential. This example emphasizes the trade-off between collector doping levels and geometric dimensions in ensuring device robustness before avalanche breakdown occurs. It also highlights that achieving higher punch-through voltages necessitates lower doping and wider base regions, which may become impractical at extreme values.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 96,
+      "parent_id": "Example 12.10",
+      "example_id": "Example 12.10",
+      "original_length": 1482
+    }
+  },
+  {
+    "index": 97,
+    "example_id": "Example 12.11",
+    "token_count": 174,
+    "text_length": 711,
+    "summary_text": "Design a bipolar transistor that meets a specified breakdown voltage requirement under open-base conditions. The key concept is understanding how the collector-emitter breakdown voltage (\\(BV_{ceo}\\)) relates to the collector-base breakdown voltage (\\(BV_{cbo}\\)) and how both are influenced by the transistor's current gain and doping levels. Achieving the target breakdown voltage involves selecting an appropriate collector doping concentration to ensure the device remains stable in worst-case scenarios. Lower collector doping helps raise the breakdown voltage but may impact other performance metrics. The design trade-off centers on ensuring reliable operation without compromising the transistor's gain.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 97,
+      "parent_id": "Example 12.11",
+      "example_id": "Example 12.11",
+      "original_length": 1058
+    }
+  },
+  {
+    "index": 98,
+    "example_id": "Example 12.12",
+    "token_count": 196,
+    "text_length": 759,
+    "summary_text": "Calculate the collector–emitter saturation voltage in a bipolar transistor. The key concept is understanding how the saturation voltage \\( V_{CE(sat)} \\) arises from the recombination and injection dynamics governed by the forward and reverse common-base current gains (\\( \\alpha_F \\) and \\( \\alpha_R \\)). The equation accounts for both forward and reverse active region behavior, reflecting how current injection and carrier recombination determine the minimum voltage drop across collector and emitter in saturation. The saturation voltage typically remains stable over a wide range of operating currents due to its logarithmic dependence. This concept is essential for analyzing switching behavior and low-voltage operation in bipolar junction transistors.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 98,
+      "parent_id": "Example 12.12",
+      "example_id": "Example 12.12",
+      "original_length": 593
+    }
+  },
+  {
+    "index": 99,
+    "example_id": "Example 12.13",
+    "token_count": 244,
+    "text_length": 806,
+    "summary_text": "Calculate the cutoff frequency at which the small-signal current gain falls to \\(1/\\sqrt{2}\\) of its low-frequency value. The key concept is understanding the frequency response of a transistor through its hybrid-pi model, focusing on how the base-emitter diffusion capacitance \\(C_{\\pi}\\) and resistance \\(r_{\\pi}\\) introduce a frequency-dependent reduction in gain. At low frequencies, the gain is dominated by the product \\(g_m r_{\\pi}\\), but as frequency increases, the reactive impedance of \\(C_{\\pi}\\) reduces the effective voltage across the base-emitter junction. The frequency at which the gain falls off is known as the \\(-3\\,\\text{dB}\\) point and is used to define the bandwidth limitations of the transistor. This analysis is crucial for designing transistors in high-speed and RF applications.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 99,
+      "parent_id": "Example 12.13",
+      "example_id": "Example 12.13",
+      "original_length": 1652
+    }
+  },
+  {
+    "index": 100,
+    "example_id": "Example 12.14",
+    "token_count": 169,
+    "text_length": 735,
+    "summary_text": "Calculate the total emitter-to-collector transit time and the cutoff frequency of a bipolar junction transistor. The key concept is understanding how physical dimensions, diffusion properties, capacitances, and parasitic resistances affect the time delay in carrier transport through a BJT. This delay, composed of base transit time, junction charging time, depletion region transit time, and collector capacitance charging time, collectively determines the transistor's high-frequency performance. The inverse of this delay sets the cutoff frequency, beyond which the transistor cannot effectively amplify signals. This analysis highlights the importance of optimizing device geometry and material properties for high-speed operation.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 100,
+      "parent_id": "Example 12.14",
+      "example_id": "Example 12.14",
+      "original_length": 1857
+    }
+  },
+  {
+    "index": 101,
+    "example_id": "Example 13.1",
+    "token_count": 135,
+    "text_length": 552,
+    "summary_text": "This example calculates the internal and external pinch-off voltages for an n-channel JFET. By using the known doping concentrations and channel thickness, the internal pinch-off voltage is computed based on electrostatic principles. Then, the pinch-off voltage is derived by subtracting this value from the built-in junction potential. The resulting negative value of pinch-off voltage confirms that the gate-to-source voltage required to pinch off the channel in a depletion-mode n-channel JFET is negative, consistent with its normal operating mode.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 101,
+      "parent_id": "Example 13.1",
+      "example_id": "Example 13.1",
+      "original_length": 1122
+    }
+  },
+  {
+    "index": 102,
+    "example_id": "Example 13.2",
+    "token_count": 151,
+    "text_length": 626,
+    "summary_text": "Design a JFET such that its pinch-off voltage equals 2.25 V. The key concept is that the pinch-off voltage is determined by both the internal built-in potential and the electrostatic relation between doping and channel thickness. By choosing a plausible channel doping concentration (e.g., 2×10¹⁶ cm⁻³), we first calculate the built-in potential based on thermal voltage and doping levels. Then, using the total internal pinch-off voltage, we rearrange the electrostatic equation to solve for the required channel thickness. This design method highlights the trade-off between doping level and manufacturable channel geometry.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 102,
+      "parent_id": "Example 13.2",
+      "example_id": "Example 13.2",
+      "original_length": 1442
+    }
+  },
+  {
+    "index": 103,
+    "example_id": "Example 13.3",
+    "token_count": 131,
+    "text_length": 517,
+    "summary_text": "To determine the maximum current in an n-channel JFET, we first calculate the pinch-off current using Equation (13.28), which incorporates doping levels, geometry, and mobility. Using previously computed values for the built-in potential and internal pinch-off voltage, we then apply the empirical relation from Equation (13.35) to determine the maximum drain current at \\(V_{GS} = 0\\). The result shows that the maximum current is reduced from the ideal pinch-off current due to the effect of the built-in potential.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 103,
+      "parent_id": "Example 13.3",
+      "example_id": "Example 13.3",
+      "original_length": 1185
+    }
+  },
+  {
+    "index": 104,
+    "example_id": "Example 13.4",
+    "token_count": 184,
+    "text_length": 438,
+    "summary_text": "To find the maximum transconductance of an n-channel depletion-mode JFET operating in saturation, we use the expression \\( g_m(\text{max}) = \\frac{3I_{DSS}}{V_p}(1 - \\sqrt{V_{GS}/V_p}) \\), assuming maximum transconductance occurs at \\( V_{GS} = 0 \\). Substituting the known values from Example 13.3 yields \\( g_m(\text{max}) = 0.204 \\, \text{mA/V} \\). The result reflects that transconductance decreases as \\( V_{GS} \\) approaches \\( V_p \\).",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 104,
+      "parent_id": "Example 13.4",
+      "example_id": "Example 13.4",
+      "original_length": 707
+    }
+  },
+  {
+    "index": 105,
+    "example_id": "Design Example 13.5",
+    "token_count": 185,
+    "text_length": 533,
+    "summary_text": "To design a GaAs MESFET with a desired threshold voltage of +0.25 V, the built-in potential barrier is first determined from the Schottky barrier height and the conduction band potential. This gives \\(V_{bi} = 0.749\\) V. The required internal pinchoff voltage is then \\(V_{φ0} = V_{bi} - V_T = 0.499\\) V. Using the relationship \\(V_{φ0} = (ea^2 N_d) / (2 ε_e)\\), we solve for the channel thickness \\(a\\), obtaining \\(a = 0.601\\) μm. This thickness ensures the desired threshold voltage is achieved for the given doping concentration.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 105,
+      "parent_id": "Design Example 13.5",
+      "example_id": "Design Example 13.5",
+      "original_length": 1283
+    }
+  },
+  {
+    "index": 106,
+    "example_id": "Example 13.6",
+    "token_count": 190,
+    "text_length": 566,
+    "summary_text": "To determine the forward-bias gate voltage needed to open a 0.1 μm-thick channel in a GaAs n-channel enhancement mode JFET, the built-in potential barrier is first calculated as \\( V_{bi} = 1.25 \\) V. The internal pinch-off voltage is found to be \\( V_{po} = 1.01 \\) V, yielding a threshold voltage of \\( V_T = 0.24 \\) V. Then, using a depletion width of \\( h = 0.6 \\) μm (which leaves 0.1 μm of channel thickness), the required gate voltage is calculated as \\( V_{GS} = 0.50 \\) V. This value is sufficient to open the channel without causing excessive gate current.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 106,
+      "parent_id": "Example 13.6",
+      "example_id": "Example 13.6",
+      "original_length": 1724
+    }
+  },
+  {
+    "index": 107,
+    "example_id": "Design Example 13.7",
+    "token_count": 210,
+    "text_length": 542,
+    "summary_text": "To design a GaAs enhancement-mode n-channel JFET that yields 75 μA drain current at \\( V_{GS} = 0.5 \\) V, we first solve for the conduction parameter \\( k_s \\) using the saturation current equation, finding \\( k_s = 1.109 \\, \\text{mA/V}^2 \\). Then, using the conduction parameter formula, we back-calculate the required channel width. With given parameters (mobility \\( \\mu_e = 8000 \\), channel length \\( L = 1.2 \\,\\mu\\text{m} \\), and channel depth \\( a = 0.70 \\,\\mu\\text{m} \\)), the channel width is found to be \\( W = 20.1 \\,\\mu\\text{m} \\).",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 107,
+      "parent_id": "Design Example 13.7",
+      "example_id": "Design Example 13.7",
+      "original_length": 1041
+    }
+  },
+  {
+    "index": 108,
+    "example_id": "Example 13.8",
+    "token_count": 177,
+    "text_length": 594,
+    "summary_text": "To calculate the small-signal output resistance \\( r_{ds} \\) of an n-channel depletion-mode silicon JFET due to channel length modulation, we compute the change in effective channel length for two different \\( V_{DS} \\) values (2.0 V and 2.5 V beyond saturation). Using these, we determine the corresponding drain currents and apply the definition of output resistance \\( r_{ds} = \\Delta V_{DS} / \\Delta I_D \\). The resulting \\( r_{ds} \\) is found to be approximately 18.9 k\\Omega, indicating a non-ideal behavior due to modulation of the effective channel length with increasing drain voltage.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 108,
+      "parent_id": "Example 13.8",
+      "example_id": "Example 13.8",
+      "original_length": 1574
+    }
+  },
+  {
+    "index": 109,
+    "example_id": "Example 13.9",
+    "token_count": 140,
+    "text_length": 459,
+    "summary_text": "To calculate the cutoff frequency \\( f_T \\) of a silicon JFET, the given parameters—electron mobility, channel thickness, doping concentration, and channel length—are substituted into the formula:\n\\[ f_T = \\frac{e\\mu_n N_d a^2}{2\\pi \\varepsilon_s L^2} \\]\nSubstituting the values results in a cutoff frequency of approximately 3.54 GHz. This demonstrates that silicon JFETs can achieve high-frequency operation under appropriate physical and doping conditions.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 109,
+      "parent_id": "Example 13.9",
+      "example_id": "Example 13.9",
+      "original_length": 659
+    }
+  },
+  {
+    "index": 110,
+    "example_id": "Example 13.10",
+    "token_count": 219,
+    "text_length": 743,
+    "summary_text": "Calculate the two-dimensional electron concentration \\(n_s\\) for an N–AlGaAs–i–GaAs heterojunction MODFET structure. The key concept is evaluating the channel electron concentration using heterostructure band alignment, built-in electric fields, and dielectric capacitance. The internal potential \\(V_{2i}\\) from the doped AlGaAs layer is first calculated using charge distribution. Then, the threshold voltage is determined by subtracting the conduction band offset and \\(V_{2i}\\) from the Schottky barrier height. Finally, using the geometric and material parameters, the sheet electron concentration \\(n_s\\) is computed, resulting in \\(1.37 \\times 10^{12} \\, \\text{cm}^{-2}\\). This reflects typical 2DEG densities in depletion-mode MODFETs.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 110,
+      "parent_id": "Example 13.10",
+      "example_id": "Example 13.10",
+      "original_length": 1250
+    }
+  },
+  {
+    "index": 111,
+    "example_id": "Example 14.1",
+    "token_count": 146,
+    "text_length": 520,
+    "summary_text": "This example calculates the required thickness of silicon to absorb 90% of incident photons for two wavelengths using the exponential absorption model. For a wavelength of 1.0 μm with absorption coefficient α = 10³ cm⁻¹, the thickness required is 0.023 cm. For a shorter wavelength of 0.5 μm with α = 10⁴ cm⁻¹, the required thickness is much smaller at 2.30 μm. The result illustrates that higher energy photons (shorter wavelengths) are absorbed more rapidly, requiring thinner material layers for effective absorption.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 111,
+      "parent_id": "Example 14.1",
+      "example_id": "Example 14.1",
+      "original_length": 1363
+    }
+  },
+  {
+    "index": 112,
+    "example_id": "Example 14.2",
+    "token_count": 172,
+    "text_length": 654,
+    "summary_text": "Calculate the generation rate of electron–hole pairs under steady-state illumination conditions. The key concept is understanding how photon absorption (determined by absorption coefficient and incident intensity) leads to carrier generation in a semiconductor. Using the given photon energy and absorption coefficient, the generation rate is calculated to be on the order of $10^{21} \\ \\text{cm}^{-3}\\cdot\\text{s}^{-1}$. This allows estimation of the steady-state excess carrier concentration, which is dependent on the carrier lifetime. The result shows how sunlight-level illumination can lead to significant carrier generation in materials like GaAs.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 112,
+      "parent_id": "Example 14.2",
+      "example_id": "Example 14.2",
+      "original_length": 1485
+    }
+  },
+  {
+    "index": 113,
+    "example_id": "Example 14.3",
+    "token_count": 288,
+    "text_length": 771,
+    "summary_text": "This example calculates the open-circuit voltage ($V_{oc}$) of a silicon pn junction solar cell under standard conditions. Given doping concentrations, diffusion coefficients, carrier lifetimes, and a known photocurrent density ($J_L = 15 \\, \\text{mA/cm}^2$), the minority carrier diffusion lengths ($L_n$ and $L_p$) are first computed. Using these, the reverse saturation current density $J_s$ is found to be $3.6 \\times 10^{-11} \\, \\text{A/cm}^2$. The open-circuit voltage is then calculated using $V_{oc} = V_t \\ln(1 + I_L/I_s)$, yielding $V_{oc} = 0.514 \\ \\text{V}$. This value is 60% of the built-in potential barrier ($V_{bi} = 0.8556 \\ \\text{V}$), illustrating that $V_{oc}$ is always less than $V_{bi}$ due to recombination and non-idealities in real solar cells.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 113,
+      "parent_id": "Example 14.3",
+      "example_id": "Example 14.3",
+      "original_length": 1722
+    }
+  },
+  {
+    "index": 114,
+    "example_id": "Example 14.4",
+    "token_count": 265,
+    "text_length": 668,
+    "summary_text": "This example computes the photoconductor gain ($\\Gamma_{ph}$) of an n-type silicon photoconductor. Given a device length of $100\\,\\mu\\text{m}$, cross-sectional area of $10^{-7}\\,\\text{cm}^2$, minority carrier lifetime $\\tau_r = 10^{-6}\\,\\text{s}$, and an applied voltage of $10\\,\\text{V}$, the electron transit time $t_e$ is calculated using $t_e = L^2 / (\\mu_e V)$, resulting in $t_e = 7.41 \\times 10^{-9}\\,\\text{s}$. The gain is then computed as $\\Gamma_{ph} = \\tau_r / t_e \\cdot (1 + \\mu_h / \\mu_e)$, yielding $\\Gamma_{ph} = 183$. This result highlights that photoconductors can exhibit significant current gain due to the ratio of carrier lifetime to transit time.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 114,
+      "parent_id": "Example 14.4",
+      "example_id": "Example 14.4",
+      "original_length": 806
+    }
+  },
+  {
+    "index": 115,
+    "example_id": "Example 14.5",
+    "token_count": 323,
+    "text_length": 777,
+    "summary_text": "This example calculates the steady-state photocurrent density ($J_L$) in a reverse-biased long silicon pn diode under optical generation. Given doping levels $N_a = N_d = 10^{16}\\,\\text{cm}^{-3}$, diffusion coefficients $D_n = 25\\,\\text{cm}^2/\\text{s}$ and $D_p = 10\\,\\text{cm}^2/\\text{s}$, carrier lifetimes, and generation rate $G_L = 10^{21}\\,\\text{cm}^{-3}\\text{s}^{-1}$, the minority carrier diffusion lengths $L_n = 35.4\\,\\mu\\text{m}$ and $L_p = 10.0\\,\\mu\\text{m}$ are computed. The depletion width $W = 1.21\\,\\mu\\text{m}$ is found using built-in potential $V_{bi}$ and applied reverse bias $V_R = 5$ V. The total photocurrent density is then calculated via $J_L = e(W + L_n + L_p) G_L = 0.75\\,\\text{A/cm}^2$, showing a substantial reverse current due to photogeneration.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 115,
+      "parent_id": "Example 14.5",
+      "example_id": "Example 14.5",
+      "original_length": 1681
+    }
+  },
+  {
+    "index": 116,
+    "example_id": "Example 14.6",
+    "token_count": 239,
+    "text_length": 593,
+    "summary_text": "This example calculates the photocurrent density ($J_L$) in a silicon PIN photodiode with an intrinsic layer of width $W = 20\\,\\mu m$, a photon flux of $10^7\\,\\text{cm}^{-2}\\text{s}^{-1}$, and absorption coefficient $\\alpha = 10^3\\,\\text{cm}^{-1}$. The front-edge generation rate is $G_{L1} = 10^{10}\\,\\text{cm}^{-3}\\text{s}^{-1}$, and the back-edge rate decays exponentially. The photocurrent density is computed as $J_L = e\\Phi_0(1 - e^{-\\alpha W}) = 13.8\\,\\text{mA/cm}^2$. The wide depletion region of the PIN structure enables higher quantum efficiency compared to a regular pn photodiode.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 116,
+      "parent_id": "Example 14.6",
+      "example_id": "Example 14.6",
+      "original_length": 1146
+    }
+  },
+  {
+    "index": 117,
+    "example_id": "Example 14.7",
+    "token_count": 190,
+    "text_length": 534,
+    "summary_text": "Determine the output wavelength of GaAs₁₋ₓPₓ for different mole fractions. The key concept is that the bandgap energy ($E_g$) of a semiconductor directly determines the photon wavelength via $\\lambda = 1.24/E$. Pure GaAs with $E_g = 1.42\\,\\text{eV}$ emits at $0.873\\,\\mu m$ in the infrared. To emit visible red light at $0.653\\,\\mu m$, the material must have $E_g = 1.90\\,\\text{eV}$, corresponding to a mole fraction $x \\approx 0.4$ in GaAs₁₋ₓPₓ. Thus, adjusting the phosphorus content allows spectral tuning from infrared to visible.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 117,
+      "parent_id": "Example 14.7",
+      "example_id": "Example 14.7",
+      "original_length": 898
+    }
+  },
+  {
+    "index": 118,
+    "example_id": "Example 14.8",
+    "token_count": 340,
+    "text_length": 870,
+    "summary_text": "The example calculates the **reflection coefficient** $\\Gamma$ at a **GaAs–air interface**. Using $n_1 = 1.0$ for air and $n_2 = 3.8$ for GaAs at $\\lambda = 0.70\\,\\mu m$, the reflection coefficient is:\n\n$$\n\\Gamma = \\left( \\frac{3.8 - 1.0}{3.8 + 1.0} \\right)^2 = 0.34\n$$\n\nThis implies **34% of photons are reflected**.\n\nIn the **exercise problem**, for GaAs$_{1-x}$P$_x$ with $x = 0.4$, the refractive index is linearly interpolated:\n\n$$\nn = (1 - 0.4) \\cdot 3.8 + 0.4 \\cdot 3.2 = 3.56\n$$\n\nSo the reflection coefficient becomes:\n\n$$\n\\Gamma = \\left( \\frac{3.56 - 1.0}{3.56 + 1.0} \\right)^2 \\approx 0.298\n$$\n\nAdditionally, the **critical angle** $\\theta_c$ for total internal reflection at the semiconductor–air interface is given by:\n\n$$\n\\theta_c = \\sin^{-1}\\left( \\frac{n_1}{n_2} \\right)\n$$\n\nThis governs the condition under which photons are totally internally reflected.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 118,
+      "parent_id": "Example 14.8",
+      "example_id": "Example 14.8",
+      "original_length": 1493
+    }
+  },
+  {
+    "index": 119,
+    "example_id": "Example 14.9",
+    "token_count": 155,
+    "text_length": 476,
+    "summary_text": "This example calculates the **critical angle** $\\theta_c$ for **total internal reflection** at a **GaAs–air interface**. Using refractive indices $n_2 = 3.8$ (GaAs) and $n_1 = 1.0$ (air), the critical angle is:\n\n$$\n\\theta_c = \\sin^{-1} \\left( \\frac{1.0}{3.8} \\right) = 15.3^\\circ\n$$\n\nThis means that **any photon hitting the interface at an angle greater than 15.3° from within the GaAs** will undergo **total internal reflection** and remain trapped inside the semiconductor.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 119,
+      "parent_id": "Example 14.9",
+      "example_id": "Example 14.9",
+      "original_length": 499
+    }
+  },
+  {
+    "index": 120,
+    "example_id": "Example 15.1",
+    "token_count": 168,
+    "text_length": 593,
+    "summary_text": "Calculate the required current, voltage, and power ratings for a power BJT operating in a common-emitter configuration. The key concept is that the **maximum power dissipation** occurs at the **center of the load line**, where collector current and collector-emitter voltage are each at half their maximum values. By analyzing power as a function of current, we find that the peak transistor power occurs when $I_C = \\frac{V_{CC}}{2R_L}$, yielding $P_T = 30.6$ W. For safe operation, the transistor must be rated above the peak current (3.5 A), voltage (35 V), and power (30.6 W) requirements.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 120,
+      "parent_id": "Example 15.1",
+      "example_id": "Example 15.1",
+      "original_length": 1600
+    }
+  },
+  {
+    "index": 121,
+    "example_id": "Example 15.2",
+    "token_count": 194,
+    "text_length": 627,
+    "summary_text": "Find the optimum drain resistance $R_D$ for a MOSFET inverter circuit using either device A or B. The key concept is that the drain resistor must be chosen so the **load line stays within the Safe Operating Area (SOA)**, while maximizing performance within the device limits. For device A, $R_D$ is constrained by the **maximum power rating**, yielding $R_D = 4.8\\,\\Omega$ with peak power of 30 W. For device B, $R_D$ is constrained by the **maximum drain current**, resulting in $R_D = 6\\,\\Omega$ and peak power of only 24 W. Thus, the optimal $R_D$ depends on whether **power** or **current** is the dominant limiting factor.",
+    "metadata": {
+      "source": "examples_text_summary_pair.json",
+      "index": 121,
+      "parent_id": "Example 15.2",
+      "example_id": "Example 15.2",
+      "original_length": 829
+    }
+  }
+]
